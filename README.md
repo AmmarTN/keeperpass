@@ -41,12 +41,13 @@ If there's nothing to hold, there's nothing to breach.
 
 ## 🔒 The trust boundary
 
-KeeperPass has no server. The cryptography runs entirely in your browser, and
-the only thing that ever reaches Google is the *output* of that cryptography —
-bytes it can store but cannot read.
+KeeperPass has no server. The cryptography runs entirely on your device — in
+your browser or in the mobile app — and the only thing that ever reaches
+Google is the *output* of that cryptography — bytes it can store but cannot
+read.
 
 ```
-your browser                             │  Google Drive
+your device                              │  Google Drive
 ─────────────────────────────────────────┼──────────────────────────
                                          │
   master secret                          │
@@ -106,10 +107,15 @@ a Web Store listing is planned. In the meantime, the [build
 instructions](extension/README.md#build--install) take about two minutes and
 require no toolchain beyond Node.
 
-### Mobile
+### Mobile app (iOS and Android)
 
-Not yet on the App Store or Play Store. See
-[mobile/README.md](mobile/README.md#build--install) to build it yourself.
+A native app for iPhone and Android, built with Flutter. It opens the same
+encrypted vault file as the web app, in your Google Drive or Dropbox: sign in,
+enter your secret, and your vault is there. Encryption runs on the phone,
+exactly as it does in the browser.
+
+Not yet on the App Store or Play Store. To install it now,
+[build it yourself](mobile_app/README.md#build--install).
 
 ---
 
@@ -119,6 +125,7 @@ Not yet on the App Store or Play Store. See
 |---|---|
 | **Autofill** | Fill logins from the browser extension toolbar |
 | **TOTP codes** | Two-factor secrets stored alongside your logins |
+| **QR code scanning** | Add a two-factor code by scanning its setup QR code (mobile app) |
 | **Password generator** | Configurable length and character sets |
 | **Tags** | Organize items across vaults |
 | **Multiple vaults** | Separate contexts (work, personal) as separate files |
@@ -131,8 +138,8 @@ Not yet on the App Store or Play Store. See
 |---|---|
 | **Key derivation** | **Argon2id** — memory-hard, tunable, resistant to GPU and ASIC cracking. Parameters: 64 MiB memory, 3 iterations, parallelism 4. |
 | **Encryption** | **AES-256-GCM** — authenticated encryption. Tamper with a single byte of ciphertext and decryption fails outright rather than quietly returning corrupted data. |
-| **Master secret** | Never transmitted. Never stored. Used once, in-browser, to derive the key. |
-| **Breach checking** | Have I Been Pwned, via **k-anonymity**. Only the first 5 characters of a SHA-1 hash leave your browser — never the password, never the full hash. |
+| **Master secret** | Never transmitted. Never stored. Used once, on your device, to derive the key. |
+| **Breach checking** | Have I Been Pwned, via **k-anonymity**. Only the first 5 characters of a SHA-1 hash leave your device — never the password, never the full hash. |
 
 **What reaches Google's servers:** ciphertext and a temporary OAuth access
 token. Nothing else. Google can host the file. Google cannot read it. Neither
@@ -207,7 +214,7 @@ It's a fair challenge, and the answer is a distinction, not a dodge.
 
 Google is being asked to **store bytes**, not to **protect them**. They are a
 hosting provider, not a trusted party. Encryption happens before the file
-ever leaves your browser, and the key is never sent anywhere. That's a
+ever leaves your device, and the key is never sent anywhere. That's a
 fundamentally different relationship than handing your vault to a company and
 trusting its security team — because in that case, the company *can* read
 your data, and you're relying on its promise not to.
@@ -280,7 +287,8 @@ Contributions are welcome — especially security review.
   privately first (see [SECURITY.md](SECURITY.md) or email
   contact@keeperpass.com) so it can be fixed before disclosure. Coordinated
   disclosure protects users; a public issue protects no one.
-- **Found a bug?** Open an issue with steps to reproduce and your browser/OS.
+- **Found a bug?** Open an issue with steps to reproduce and your browser/OS
+  (or, for the mobile app, your phone and its OS version).
 - **Want to add a feature?** Open an issue to discuss before writing code —
   it saves everyone time.
 - **Want to review the crypto?** That's the most valuable contribution you can
@@ -291,7 +299,7 @@ Contributions are welcome — especially security review.
 Each component has its own build instructions:
 
 - [Extension →](extension/README.md#build--install)
-- [Mobile →](mobile/README.md#build--install)
+- [Mobile →](mobile_app/README.md#build--install)
 
 ---
 

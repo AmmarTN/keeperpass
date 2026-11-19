@@ -62,3 +62,5 @@ testem.log
 .DS_Store
 Thumbs.db
 *.pem
+mobile_app/
+docs/
