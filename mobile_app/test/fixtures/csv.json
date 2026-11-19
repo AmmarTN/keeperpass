@@ -1,0 +1,362 @@
+{
+  "source": "web/src/app/core/import-export/csv.ts (bundled with esbuild, run in Node v20.19.0)",
+  "encode": {
+    "rows": [
+      [
+        "name",
+        "tags",
+        "Username",
+        "Password",
+        "Notes"
+      ],
+      [
+        "Git\"Hub",
+        "work,dev",
+        "jane",
+        "a,b\"c",
+        "line1\nline2"
+      ],
+      [
+        "Ünïcödé 🔐",
+        "",
+        "",
+        "",
+        "plain"
+      ],
+      [
+        "cr\rlf",
+        " spaced ",
+        "=1+2",
+        "",
+        ""
+      ]
+    ],
+    "csv": "name,tags,Username,Password,Notes\r\n\"Git\"\"Hub\",\"work,dev\",jane,\"a,b\"\"c\",\"line1\nline2\"\r\nÜnïcödé 🔐,,,,plain\r\n\"cr\rlf\", spaced ,=1+2,,"
+  },
+  "parse": [
+    {
+      "text": "",
+      "rows": []
+    },
+    {
+      "text": "a,b,c",
+      "rows": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ]
+    },
+    {
+      "text": "a,b,c\n",
+      "rows": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ]
+    },
+    {
+      "text": "a,b,c\r\n1,2,3\r\n",
+      "rows": [
+        [
+          "a",
+          "b",
+          "c"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ]
+    },
+    {
+      "text": "﻿name,tags\nx,y",
+      "rows": [
+        [
+          "name",
+          "tags"
+        ],
+        [
+          "x",
+          "y"
+        ]
+      ]
+    },
+    {
+      "text": "\"quoted, comma\",\"say \"\"hi\"\"\",plain\n\"multi\nline\",x",
+      "rows": [
+        [
+          "quoted, comma",
+          "say \"hi\"",
+          "plain"
+        ],
+        [
+          "multi\nline",
+          "x"
+        ]
+      ]
+    },
+    {
+      "text": "a,,c\n,,\n",
+      "rows": [
+        [
+          "a",
+          "",
+          "c"
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "text": "\"unterminated,x\ny",
+      "rows": [
+        [
+          "unterminated,x\ny"
+        ]
+      ]
+    },
+    {
+      "text": "trailing,comma,\n",
+      "rows": [
+        [
+          "trailing",
+          "comma",
+          ""
+        ]
+      ]
+    },
+    {
+      "text": "only\n\n\nblank lines\n",
+      "rows": [
+        [
+          "only"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          "blank lines"
+        ]
+      ]
+    },
+    {
+      "text": " a , b ",
+      "rows": [
+        [
+          " a ",
+          " b "
+        ]
+      ]
+    }
+  ],
+  "itemsToCsv": {
+    "items": [
+      {
+        "name": "GitHub",
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "fields": [
+          {
+            "name": "Username",
+            "type": "username",
+            "value": "jane"
+          },
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "p,\"w"
+          }
+        ]
+      },
+      {
+        "name": "Wi-Fi",
+        "tags": [],
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "x"
+          },
+          {
+            "name": "Network",
+            "type": "text",
+            "value": "Home\n5G"
+          },
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "override"
+          }
+        ]
+      },
+      {
+        "name": "Empty",
+        "tags": [
+          "t"
+        ],
+        "fields": []
+      }
+    ],
+    "csv": "name,tags,Username,Password,Network\r\nGitHub,\"work,dev\",jane,\"p,\"\"w\",\r\nWi-Fi,,,override,\"Home\n5G\"\r\nEmpty,t,,,"
+  },
+  "drafts": [
+    {
+      "rows": [
+        [
+          "name",
+          "tags",
+          "Login Username",
+          "PASSWORD",
+          "website",
+          "Card Number",
+          "CVV",
+          "Notes",
+          "Unknown Column",
+          " e-mail "
+        ]
+      ],
+      "drafts": []
+    },
+    {
+      "rows": [
+        [
+          "name",
+          "tags",
+          "username",
+          "password"
+        ],
+        [
+          "GitHub",
+          "work, dev ,",
+          "jane",
+          "pw"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "  ",
+          " ",
+          "",
+          ""
+        ],
+        [
+          "No pass",
+          "",
+          "bob",
+          ""
+        ],
+        [
+          "Short row"
+        ]
+      ],
+      "drafts": [
+        {
+          "name": "GitHub",
+          "tags": [
+            "work",
+            "dev"
+          ],
+          "fields": [
+            {
+              "name": "username",
+              "type": "username",
+              "value": "jane"
+            },
+            {
+              "name": "password",
+              "type": "password",
+              "value": "pw"
+            }
+          ]
+        },
+        {
+          "name": "No pass",
+          "tags": [],
+          "fields": [
+            {
+              "name": "username",
+              "type": "username",
+              "value": "bob"
+            }
+          ]
+        },
+        {
+          "name": "Short row",
+          "tags": [],
+          "fields": []
+        }
+      ]
+    },
+    {
+      "rows": [],
+      "drafts": []
+    }
+  ],
+  "headings": [
+    {
+      "heading": "username",
+      "type": "username"
+    },
+    {
+      "heading": " User Name ",
+      "type": "username"
+    },
+    {
+      "heading": "LOGIN URI",
+      "type": "url"
+    },
+    {
+      "heading": "cvc",
+      "type": "pin"
+    },
+    {
+      "heading": "totp",
+      "type": "totp"
+    },
+    {
+      "heading": "OTP",
+      "type": "totp"
+    },
+    {
+      "heading": "formatted note",
+      "type": "note"
+    },
+    {
+      "heading": "richtext / markdown",
+      "type": "note"
+    },
+    {
+      "heading": "ip / host",
+      "type": "ip_host"
+    },
+    {
+      "heading": "nothing",
+      "type": "text"
+    },
+    {
+      "heading": "Ssh / Private Key",
+      "type": "ssh_key"
+    },
+    {
+      "heading": "backup codes",
+      "type": "recovery_codes"
+    }
+  ]
+}

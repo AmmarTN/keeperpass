@@ -1,0 +1,3 @@
+/* The camera prompt (Scan a QR code, Part 15): the board's sentence,
+   as in the app's "Camera access is off". */
+"NSCameraUsageDescription" = "KeeperPass n’a besoin de l’appareil photo que pour lire les codes QR.";

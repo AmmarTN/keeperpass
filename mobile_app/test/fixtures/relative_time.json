@@ -1,0 +1,605 @@
+{
+  "source": "web/src/app/features/items/format-date.ts formatRelativeToNow (bundled with esbuild, run in Node v20.19.0)",
+  "cases": [
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353260000,
+      "text": "now"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353260400,
+      "text": "now"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353289000,
+      "text": "in 29 seconds"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353319499,
+      "text": "in 59 seconds"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353321000,
+      "text": "in 1 minute"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793353199000,
+      "text": "1 minute ago"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793356860000,
+      "text": "in 1 hour"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793347860000,
+      "text": "1 hour ago"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793439660000,
+      "text": "tomorrow"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793266860000,
+      "text": "yesterday"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793180460000,
+      "text": "2 days ago"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1793612460000,
+      "text": "in 3 days"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1792748460000,
+      "text": "last week"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1794476460000,
+      "text": "in 2 weeks"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1790761260000,
+      "text": "last month"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1797241260000,
+      "text": "in 2 months"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1761903660000,
+      "text": "12 months ago"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1824889260000,
+      "text": "next year"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 1724233260000,
+      "text": "2 years ago"
+    },
+    {
+      "locale": "en",
+      "now": 1793353260000,
+      "date": 3054793260000,
+      "text": "in 40 years"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353260000,
+      "text": "jetzt"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353260400,
+      "text": "jetzt"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353289000,
+      "text": "in 29 Sekunden"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353319499,
+      "text": "in 59 Sekunden"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353321000,
+      "text": "in 1 Minute"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793353199000,
+      "text": "vor 1 Minute"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793356860000,
+      "text": "in 1 Stunde"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793347860000,
+      "text": "vor 1 Stunde"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793439660000,
+      "text": "morgen"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793266860000,
+      "text": "gestern"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793180460000,
+      "text": "vorgestern"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1793612460000,
+      "text": "in 3 Tagen"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1792748460000,
+      "text": "letzte Woche"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1794476460000,
+      "text": "in 2 Wochen"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1790761260000,
+      "text": "letzten Monat"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1797241260000,
+      "text": "in 2 Monaten"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1761903660000,
+      "text": "vor 12 Monaten"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1824889260000,
+      "text": "nächstes Jahr"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 1724233260000,
+      "text": "vor 2 Jahren"
+    },
+    {
+      "locale": "de",
+      "now": 1793353260000,
+      "date": 3054793260000,
+      "text": "in 40 Jahren"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353260000,
+      "text": "ahora"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353260400,
+      "text": "ahora"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353289000,
+      "text": "dentro de 29 segundos"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353319499,
+      "text": "dentro de 59 segundos"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353321000,
+      "text": "dentro de 1 minuto"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793353199000,
+      "text": "hace 1 minuto"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793356860000,
+      "text": "dentro de 1 hora"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793347860000,
+      "text": "hace 1 hora"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793439660000,
+      "text": "mañana"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793266860000,
+      "text": "ayer"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793180460000,
+      "text": "anteayer"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1793612460000,
+      "text": "dentro de 3 días"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1792748460000,
+      "text": "la semana pasada"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1794476460000,
+      "text": "dentro de 2 semanas"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1790761260000,
+      "text": "el mes pasado"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1797241260000,
+      "text": "dentro de 2 meses"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1761903660000,
+      "text": "hace 12 meses"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1824889260000,
+      "text": "el próximo año"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 1724233260000,
+      "text": "hace 2 años"
+    },
+    {
+      "locale": "es",
+      "now": 1793353260000,
+      "date": 3054793260000,
+      "text": "dentro de 40 años"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353260000,
+      "text": "maintenant"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353260400,
+      "text": "maintenant"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353289000,
+      "text": "dans 29 secondes"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353319499,
+      "text": "dans 59 secondes"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353321000,
+      "text": "dans 1 minute"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793353199000,
+      "text": "il y a 1 minute"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793356860000,
+      "text": "dans 1 heure"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793347860000,
+      "text": "il y a 1 heure"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793439660000,
+      "text": "demain"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793266860000,
+      "text": "hier"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793180460000,
+      "text": "avant-hier"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1793612460000,
+      "text": "dans 3 jours"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1792748460000,
+      "text": "la semaine dernière"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1794476460000,
+      "text": "dans 2 semaines"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1790761260000,
+      "text": "le mois dernier"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1797241260000,
+      "text": "dans 2 mois"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1761903660000,
+      "text": "il y a 12 mois"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1824889260000,
+      "text": "l’année prochaine"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 1724233260000,
+      "text": "il y a 2 ans"
+    },
+    {
+      "locale": "fr",
+      "now": 1793353260000,
+      "date": 3054793260000,
+      "text": "dans 40 ans"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353260000,
+      "text": "agora"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353260400,
+      "text": "agora"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353289000,
+      "text": "dentro de 29 segundos"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353319499,
+      "text": "dentro de 59 segundos"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353321000,
+      "text": "dentro de 1 minuto"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793353199000,
+      "text": "há 1 minuto"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793356860000,
+      "text": "dentro de 1 hora"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793347860000,
+      "text": "há 1 hora"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793439660000,
+      "text": "amanhã"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793266860000,
+      "text": "ontem"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793180460000,
+      "text": "anteontem"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1793612460000,
+      "text": "dentro de 3 dias"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1792748460000,
+      "text": "semana passada"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1794476460000,
+      "text": "dentro de 2 semanas"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1790761260000,
+      "text": "mês passado"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1797241260000,
+      "text": "dentro de 2 meses"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1761903660000,
+      "text": "há 12 meses"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1824889260000,
+      "text": "próximo ano"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 1724233260000,
+      "text": "há 2 anos"
+    },
+    {
+      "locale": "pt",
+      "now": 1793353260000,
+      "date": 3054793260000,
+      "text": "dentro de 40 anos"
+    }
+  ]
+}

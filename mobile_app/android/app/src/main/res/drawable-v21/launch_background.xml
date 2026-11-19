@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launch screen before Android 12 (board Brand): the white mark on black, the
+     same in light and dark. Android 12+ uses the splash attributes in
+     values-v31 and values-night-v31. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splashscreen_background" />
+    <item
+        android:drawable="@drawable/splash_icon"
+        android:gravity="center"
+        android:width="288dp"
+        android:height="288dp" />
+</layer-list>

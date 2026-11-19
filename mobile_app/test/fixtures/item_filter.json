@@ -1,0 +1,1028 @@
+{
+  "source": "web/src/app/features/items/item-filter.ts (bundled with esbuild, run in Node v20.19.0)",
+  "items": [
+    {
+      "id": "id-000",
+      "vaultId": "v-work",
+      "name": "GitHub",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user0@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "updated": "2026-06-01T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-001",
+      "vaultId": "vault-personal",
+      "name": "github",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user1@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-06-02T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-002",
+      "vaultId": "vault-personal",
+      "name": "Gitlab",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user2@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-06-03T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-003",
+      "vaultId": "v-work",
+      "name": "Amazon",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user3@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-04T00:00:00.000Z",
+      "updated": "2026-06-04T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-004",
+      "vaultId": "vault-personal",
+      "name": "amazon",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user4@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-05T00:00:00.000Z",
+      "updated": "2026-06-05T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-005",
+      "vaultId": "vault-personal",
+      "name": "Ämazon",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user5@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-06-06T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-006",
+      "vaultId": "v-work",
+      "name": "Zebra",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user6@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-07T00:00:00.000Z",
+      "updated": "2026-06-07T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-007",
+      "vaultId": "vault-personal",
+      "name": "zeta",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user7@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-06-08T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-008",
+      "vaultId": "vault-personal",
+      "name": "Éclair",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user8@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-06-09T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-009",
+      "vaultId": "v-work",
+      "name": "eclair",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user9@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-06-10T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-010",
+      "vaultId": "vault-personal",
+      "name": "Eclair",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user10@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-06-11T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-011",
+      "vaultId": "vault-personal",
+      "name": "Ecl air",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user11@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-05T00:00:00.000Z",
+      "updated": "2026-06-12T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-012",
+      "vaultId": "v-work",
+      "name": "1Password",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user12@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-06T00:00:00.000Z",
+      "updated": "2026-06-13T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-013",
+      "vaultId": "vault-personal",
+      "name": "10 Downing",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user13@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-07T00:00:00.000Z",
+      "updated": "2026-06-14T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-014",
+      "vaultId": "vault-personal",
+      "name": "2FA backup",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user14@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-06-15T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-015",
+      "vaultId": "v-work",
+      "name": "_private",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user15@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-06-16T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-016",
+      "vaultId": "vault-personal",
+      "name": "-dash",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user16@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-06-17T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-017",
+      "vaultId": "vault-personal",
+      "name": ".dot",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user17@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-04T00:00:00.000Z",
+      "updated": "2026-06-18T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-018",
+      "vaultId": "v-work",
+      "name": "(paren)",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user18@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-05T00:00:00.000Z",
+      "updated": "2026-06-19T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-019",
+      "vaultId": "vault-personal",
+      "name": "@handle",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user19@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-06T00:00:00.000Z",
+      "updated": "2026-06-20T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-020",
+      "vaultId": "vault-personal",
+      "name": "Ωmega",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user20@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "updated": "2026-06-21T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-021",
+      "vaultId": "v-work",
+      "name": "Яндекс",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user21@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-06-22T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-022",
+      "vaultId": "vault-personal",
+      "name": "Alpha",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user22@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-06-23T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-023",
+      "vaultId": "vault-personal",
+      "name": "alpha",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user23@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-06-24T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-024",
+      "vaultId": "v-work",
+      "name": "ALPHA",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user24@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-04T00:00:00.000Z",
+      "updated": "2026-06-25T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-025",
+      "vaultId": "vault-personal",
+      "name": "Ålesund",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user25@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-06-26T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-026",
+      "vaultId": "vault-personal",
+      "name": "Øresund",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user26@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-06T00:00:00.000Z",
+      "updated": "2026-06-27T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-027",
+      "vaultId": "v-work",
+      "name": "Œuvre",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user27@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-07T00:00:00.000Z",
+      "updated": "2026-06-28T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-028",
+      "vaultId": "vault-personal",
+      "name": "Straße",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user28@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-06-29T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-029",
+      "vaultId": "vault-personal",
+      "name": "Strasse",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user29@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-06-30T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-030",
+      "vaultId": "v-work",
+      "name": "résumé",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user30@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-07-01T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-031",
+      "vaultId": "vault-personal",
+      "name": "Resume",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user31@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-04T00:00:00.000Z",
+      "updated": "2026-07-02T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-032",
+      "vaultId": "vault-personal",
+      "name": "résume",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user32@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-05T00:00:00.000Z",
+      "updated": "2026-07-03T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-033",
+      "vaultId": "v-work",
+      "name": "日本",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user33@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-06T00:00:00.000Z",
+      "updated": "2026-07-04T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-034",
+      "vaultId": "vault-personal",
+      "name": "中国",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user34@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-07T00:00:00.000Z",
+      "updated": "2026-07-05T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-035",
+      "vaultId": "vault-personal",
+      "name": "Ölfass",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user35@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "updated": "2026-07-06T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-036",
+      "vaultId": "v-work",
+      "name": "Oelfass",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user36@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-07-07T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-037",
+      "vaultId": "vault-personal",
+      "name": "a b",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user37@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-07-08T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-038",
+      "vaultId": "vault-personal",
+      "name": "ab",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user38@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-04T00:00:00.000Z",
+      "updated": "2026-07-09T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-039",
+      "vaultId": "v-work",
+      "name": "a-b",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user39@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-05T00:00:00.000Z",
+      "updated": "2026-07-10T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-040",
+      "vaultId": "vault-personal",
+      "name": "a_b",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user40@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "updated": "2026-07-11T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-041",
+      "vaultId": "vault-personal",
+      "name": "a.b",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user41@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-07T00:00:00.000Z",
+      "updated": "2026-07-12T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-042",
+      "vaultId": "v-work",
+      "name": "Docker Hub",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user42@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-01T00:00:00.000Z",
+      "updated": "2026-07-13T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-043",
+      "vaultId": "vault-personal",
+      "name": "docker",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user43@example.com"
+        }
+      ],
+      "tags": [
+        "personal"
+      ],
+      "created": "2026-01-02T00:00:00.000Z",
+      "updated": "2026-07-14T00:00:00.000Z",
+      "history": []
+    },
+    {
+      "id": "id-044",
+      "vaultId": "vault-personal",
+      "name": "Dockerfile",
+      "fields": [
+        {
+          "name": "Username",
+          "type": "username",
+          "value": "user44@example.com"
+        }
+      ],
+      "tags": [
+        "work"
+      ],
+      "created": "2026-01-03T00:00:00.000Z",
+      "updated": "2026-07-15T00:00:00.000Z",
+      "history": []
+    }
+  ],
+  "favouriteIds": [
+    "id-001",
+    "id-004",
+    "id-010"
+  ],
+  "recentIds": [
+    "id-010",
+    "id-002",
+    "id-030"
+  ],
+  "findings": {
+    "suffix": "3",
+    "type": "weak_password"
+  },
+  "cases": [
+    {
+      "label": "all",
+      "filter": {
+        "favourites": false,
+        "recent": false,
+        "search": ""
+      },
+      "ids": [
+        "id-015",
+        "id-016",
+        "id-017",
+        "id-018",
+        "id-019",
+        "id-013",
+        "id-012",
+        "id-014",
+        "id-037",
+        "id-040",
+        "id-039",
+        "id-041",
+        "id-038",
+        "id-025",
+        "id-023",
+        "id-022",
+        "id-024",
+        "id-004",
+        "id-003",
+        "id-005",
+        "id-043",
+        "id-042",
+        "id-044",
+        "id-011",
+        "id-009",
+        "id-010",
+        "id-008",
+        "id-001",
+        "id-000",
+        "id-002",
+        "id-036",
+        "id-027",
+        "id-035",
+        "id-026",
+        "id-031",
+        "id-032",
+        "id-030",
+        "id-029",
+        "id-028",
+        "id-006",
+        "id-007",
+        "id-020",
+        "id-021",
+        "id-034",
+        "id-033"
+      ]
+    },
+    {
+      "label": "vault",
+      "filter": {
+        "vaultId": "v-work",
+        "favourites": false,
+        "recent": false,
+        "search": ""
+      },
+      "ids": [
+        "id-015",
+        "id-018",
+        "id-012",
+        "id-039",
+        "id-024",
+        "id-003",
+        "id-042",
+        "id-009",
+        "id-000",
+        "id-036",
+        "id-027",
+        "id-030",
+        "id-006",
+        "id-021",
+        "id-033"
+      ]
+    },
+    {
+      "label": "tag",
+      "filter": {
+        "tag": "work",
+        "favourites": false,
+        "recent": false,
+        "search": ""
+      },
+      "ids": [
+        "id-016",
+        "id-012",
+        "id-040",
+        "id-024",
+        "id-004",
+        "id-044",
+        "id-008",
+        "id-000",
+        "id-036",
+        "id-032",
+        "id-028",
+        "id-020"
+      ]
+    },
+    {
+      "label": "favourites",
+      "filter": {
+        "favourites": true,
+        "recent": false,
+        "search": ""
+      },
+      "ids": [
+        "id-004",
+        "id-010",
+        "id-001"
+      ]
+    },
+    {
+      "label": "recent",
+      "filter": {
+        "favourites": false,
+        "recent": true,
+        "search": ""
+      },
+      "ids": [
+        "id-010",
+        "id-002",
+        "id-030"
+      ]
+    },
+    {
+      "label": "report",
+      "filter": {
+        "report": "weak_password",
+        "favourites": false,
+        "recent": false,
+        "search": ""
+      },
+      "ids": [
+        "id-013",
+        "id-023",
+        "id-003",
+        "id-043",
+        "id-033"
+      ]
+    },
+    {
+      "label": "search",
+      "filter": {
+        "favourites": false,
+        "recent": false,
+        "search": "GIT"
+      },
+      "ids": [
+        "id-001",
+        "id-000",
+        "id-002"
+      ]
+    },
+    {
+      "label": "search-words",
+      "filter": {
+        "favourites": false,
+        "recent": false,
+        "search": " user1  example "
+      },
+      "ids": [
+        "id-015",
+        "id-016",
+        "id-017",
+        "id-018",
+        "id-019",
+        "id-013",
+        "id-012",
+        "id-014",
+        "id-011",
+        "id-010",
+        "id-001"
+      ]
+    },
+    {
+      "label": "search-in-vault",
+      "filter": {
+        "vaultId": "v-work",
+        "favourites": true,
+        "recent": false,
+        "search": "a"
+      },
+      "ids": [
+        "id-015",
+        "id-018",
+        "id-012",
+        "id-039",
+        "id-024",
+        "id-003",
+        "id-042",
+        "id-009",
+        "id-000",
+        "id-036",
+        "id-027",
+        "id-030",
+        "id-006",
+        "id-021",
+        "id-033"
+      ]
+    }
+  ]
+}

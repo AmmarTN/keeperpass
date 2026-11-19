@@ -1,0 +1,3686 @@
+{
+  "source": "web/src/app/core/vault/vault.store.ts (bundled with esbuild, run in Node v20.19.0; now pinned to 2026-11-01T09:41:00.000Z)",
+  "now": "2026-11-01T09:41:00.000Z",
+  "input": {
+    "vaults": [
+      {
+        "id": "vault-personal",
+        "name": "My Vault",
+        "created": "2025-01-04T10:00:00.000Z"
+      },
+      {
+        "id": "v-work",
+        "name": "Work",
+        "created": "2026-03-03T10:00:00.000Z"
+      },
+      {
+        "id": "v-old",
+        "name": "Old one"
+      },
+      {
+        "id": "v-shared",
+        "name": "Team",
+        "organizationId": "org-1"
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-1",
+        "name": "Acme"
+      }
+    ],
+    "items": [
+      {
+        "id": "github",
+        "vaultId": "v-work",
+        "name": "github",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "github-pw"
+          }
+        ],
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "created": "2025-01-04T10:00:00.000Z",
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": []
+      },
+      {
+        "id": "gitlab",
+        "vaultId": "v-work",
+        "name": "gitlab",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "gitlab-pw"
+          }
+        ],
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "created": "2026-02-11T10:00:00.000Z",
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": [
+          {
+            "updated": "2026-01-01T00:00:00.000Z",
+            "name": "gitlab v0",
+            "fields": [],
+            "tags": []
+          },
+          {
+            "updated": "2026-02-01T00:00:00.000Z",
+            "name": "gitlab v1",
+            "fields": [],
+            "tags": []
+          },
+          {
+            "updated": "2026-03-01T00:00:00.000Z",
+            "name": "gitlab v2",
+            "fields": [],
+            "tags": []
+          },
+          {
+            "updated": "2026-04-01T00:00:00.000Z",
+            "name": "gitlab v3",
+            "fields": [],
+            "tags": []
+          },
+          {
+            "updated": "2026-05-01T00:00:00.000Z",
+            "name": "gitlab v4",
+            "fields": [],
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": "slack",
+        "vaultId": "vault-personal",
+        "name": "slack",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "slack-pw"
+          }
+        ],
+        "tags": [
+          "work"
+        ],
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": []
+      },
+      {
+        "id": "netflix",
+        "vaultId": "vault-personal",
+        "name": "netflix",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "netflix-pw"
+          }
+        ],
+        "tags": [
+          "entertainment"
+        ],
+        "created": "2025-01-04T10:00:00.000Z",
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": []
+      },
+      {
+        "id": "bank",
+        "vaultId": "v-old",
+        "name": "bank",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "bank-pw"
+          }
+        ],
+        "tags": [
+          "finance",
+          "Finance"
+        ],
+        "created": "2025-06-09T10:00:00.000Z",
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": []
+      },
+      {
+        "id": "plain",
+        "vaultId": "vault-personal",
+        "name": "plain",
+        "fields": [
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "plain-pw"
+          }
+        ],
+        "tags": [],
+        "created": "2024-01-01T00:00:00.000Z",
+        "updated": "2026-10-01T08:00:00.000Z",
+        "history": []
+      }
+    ],
+    "favouriteIds": [
+      "github"
+    ],
+    "tagRegistry": [
+      {
+        "name": "work",
+        "created": "2025-01-04T10:00:00.000Z"
+      },
+      {
+        "name": "dev"
+      },
+      {
+        "name": "travel",
+        "created": "2026-05-05T05:05:05.000Z"
+      },
+      {
+        "name": "éte",
+        "created": "2026-05-06T05:05:05.000Z"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "nothing changed",
+      "ops": [],
+      "returns": [],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a vault",
+      "ops": [
+        {
+          "op": "renameVault",
+          "args": [
+            "v-work",
+            "  Work projects  "
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work projects"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a vault to blank",
+      "ops": [
+        {
+          "op": "renameVault",
+          "args": [
+            "v-work",
+            "   "
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename an unknown vault",
+      "ops": [
+        {
+          "op": "renameVault",
+          "args": [
+            "nope",
+            "X"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete a vault",
+      "ops": [
+        {
+          "op": "deleteVault",
+          "args": [
+            "v-work"
+          ]
+        }
+      ],
+      "returns": [
+        true
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete the personal vault",
+      "ops": [
+        {
+          "op": "deleteVault",
+          "args": [
+            "vault-personal"
+          ]
+        }
+      ],
+      "returns": [
+        false
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete an unknown vault",
+      "ops": [
+        {
+          "op": "deleteVault",
+          "args": [
+            "nope"
+          ]
+        }
+      ],
+      "returns": [
+        false
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete two vaults",
+      "ops": [
+        {
+          "op": "deleteVault",
+          "args": [
+            "v-work"
+          ]
+        },
+        {
+          "op": "deleteVault",
+          "args": [
+            "v-old"
+          ]
+        }
+      ],
+      "returns": [
+        true,
+        true
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "vault-personal",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal"
+        ]
+      }
+    },
+    {
+      "name": "add a tag",
+      "ops": [
+        {
+          "op": "createTag",
+          "args": [
+            "  hobby  "
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "hobby",
+            "created": "2026-11-01T09:41:00.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "hobby",
+            "count": 0,
+            "created": "2026-11-01T09:41:00.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "add a known tag",
+      "ops": [
+        {
+          "op": "createTag",
+          "args": [
+            "work"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "add a blank tag",
+      "ops": [
+        {
+          "op": "createTag",
+          "args": [
+            "   "
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a tag",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "dev",
+            "development"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "development"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "development"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 5,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "development",
+            "created": null
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "development",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a tag, trimmed",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "work",
+            "  job  "
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "dev",
+              "job"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "dev",
+              "job"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 5,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "job"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "job",
+            "created": "2025-01-04T10:00:00.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "job",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a tag into one that exists (merge)",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "dev",
+            "work"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 5,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename a registered-only tag",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "travel",
+            "trips"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "trips",
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "trips",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename into a registered-only tag",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "entertainment",
+            "travel"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "travel"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "entertainment"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 1,
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename to blank or unchanged",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "dev",
+            " "
+          ]
+        },
+        {
+          "op": "renameTag",
+          "args": [
+            "dev",
+            "dev"
+          ]
+        }
+      ],
+      "returns": [
+        null,
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "rename differs only in case",
+      "ops": [
+        {
+          "op": "renameTag",
+          "args": [
+            "Finance",
+            "finance"
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "finance",
+              "Finance"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "finance",
+            "created": null
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete a tag",
+      "ops": [
+        {
+          "op": "deleteTags",
+          "args": [
+            [
+              "dev"
+            ]
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 5,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete several tags",
+      "ops": [
+        {
+          "op": "deleteTags",
+          "args": [
+            [
+              "work",
+              "travel",
+              "nope"
+            ]
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "dev"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "dev"
+            ],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 5,
+            "historyTags": [
+              "work",
+              "dev"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-11-01T09:41:00.000Z",
+            "history": 1,
+            "historyTags": [
+              "work"
+            ],
+            "historyUpdated": "2026-10-01T08:00:00.000Z"
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    },
+    {
+      "name": "delete no tags",
+      "ops": [
+        {
+          "op": "deleteTags",
+          "args": [
+            []
+          ]
+        }
+      ],
+      "returns": [
+        null
+      ],
+      "result": {
+        "vaults": [
+          {
+            "id": "vault-personal",
+            "name": "My Vault"
+          },
+          {
+            "id": "v-work",
+            "name": "Work"
+          },
+          {
+            "id": "v-old",
+            "name": "Old one"
+          },
+          {
+            "id": "v-shared",
+            "name": "Team"
+          }
+        ],
+        "items": [
+          {
+            "id": "github",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "gitlab",
+            "vaultId": "v-work",
+            "tags": [
+              "work",
+              "dev"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 5,
+            "historyTags": [],
+            "historyUpdated": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "id": "slack",
+            "vaultId": "vault-personal",
+            "tags": [
+              "work"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "netflix",
+            "vaultId": "vault-personal",
+            "tags": [
+              "entertainment"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "bank",
+            "vaultId": "v-old",
+            "tags": [
+              "finance",
+              "Finance"
+            ],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          },
+          {
+            "id": "plain",
+            "vaultId": "vault-personal",
+            "tags": [],
+            "updated": "2026-10-01T08:00:00.000Z",
+            "history": 0,
+            "historyTags": null,
+            "historyUpdated": null
+          }
+        ],
+        "tagRegistry": [
+          {
+            "name": "work",
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "created": null
+          },
+          {
+            "name": "travel",
+            "created": "2026-05-05T05:05:05.000Z"
+          },
+          {
+            "name": "éte",
+            "created": "2026-05-06T05:05:05.000Z"
+          }
+        ],
+        "favouriteIds": [
+          "github"
+        ],
+        "tags": [
+          {
+            "name": "work",
+            "count": 3,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "dev",
+            "count": 2,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "entertainment",
+            "count": 1,
+            "created": "2025-01-04T10:00:00.000Z"
+          },
+          {
+            "name": "finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "Finance",
+            "count": 1,
+            "created": "2025-06-09T10:00:00.000Z"
+          },
+          {
+            "name": "éte",
+            "count": 0,
+            "created": "2026-05-06T05:05:05.000Z"
+          },
+          {
+            "name": "travel",
+            "count": 0,
+            "created": "2026-05-05T05:05:05.000Z"
+          }
+        ],
+        "ownVaults": [
+          "vault-personal",
+          "v-work",
+          "v-old"
+        ]
+      }
+    }
+  ]
+}

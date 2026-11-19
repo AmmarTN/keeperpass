@@ -1,0 +1,605 @@
+{
+  "source": "web/src/app/core/vault/vault.store.ts hydrate → snapshot (bundled with esbuild, run in Node v20.19.0)",
+  "input": {
+    "vaults": [
+      {
+        "id": "vault-personal",
+        "name": "My Vault",
+        "created": "2025-01-04T10:20:30.456Z",
+        "futureVaultProp": {
+          "nested": [
+            1,
+            "two"
+          ]
+        }
+      },
+      {
+        "id": "v-work",
+        "name": "Work",
+        "organizationId": "org-1",
+        "error": "Sync failed"
+      },
+      {
+        "id": "v-old",
+        "name": "Old one"
+      }
+    ],
+    "items": [
+      {
+        "id": "i-github",
+        "vaultId": "vault-personal",
+        "name": "GitHub",
+        "fields": [
+          {
+            "name": "Username",
+            "type": "username",
+            "value": "janedoe-dev"
+          },
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "Tq7#vR2m!xW9pL4@kZ8s",
+            "secret": true,
+            "futureFieldProp": "kept"
+          },
+          {
+            "name": "Website",
+            "type": "url",
+            "value": "github.com",
+            "iconGlyph": "f09b"
+          },
+          {
+            "name": "Authenticator Code",
+            "type": "totp",
+            "value": "JBSWY3DPEHPK3PXP"
+          },
+          {
+            "name": "Birthday",
+            "type": "date",
+            "value": "1992-04-12"
+          },
+          {
+            "name": "Expires On",
+            "type": "month",
+            "value": "2029-08"
+          },
+          {
+            "name": "Hologram",
+            "type": "future_field_type",
+            "value": "from a newer app"
+          }
+        ],
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "created": "2026-08-23T18:54:00.000Z",
+        "updated": "2026-10-30T09:41:12.345Z",
+        "expiresAfter": 90,
+        "expiresAt": "2027-01-28T09:41:12.345Z",
+        "icon": "web",
+        "iconGlyph": "f09b",
+        "futureItemField": {
+          "pinned": true
+        },
+        "history": [
+          {
+            "updated": "2026-10-21T18:54:00.000Z",
+            "name": "GitHub v7",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-0"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 0
+          },
+          {
+            "updated": "2026-10-20T18:54:00.001Z",
+            "name": "GitHub v6",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-1"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 1
+          },
+          {
+            "updated": "2026-10-19T18:54:00.002Z",
+            "name": "GitHub v5",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-2"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 2
+          },
+          {
+            "updated": "2026-10-18T18:54:00.003Z",
+            "name": "GitHub v4",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-3"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 3
+          },
+          {
+            "updated": "2026-10-17T18:54:00.004Z",
+            "name": "GitHub v3",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-4"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 4
+          },
+          {
+            "updated": "2026-10-16T18:54:00.005Z",
+            "name": "GitHub v2",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-5"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 5
+          },
+          {
+            "updated": "2026-10-15T18:54:00.006Z",
+            "name": "GitHub v1",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-6"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 6
+          }
+        ]
+      },
+      {
+        "id": "i-legacy",
+        "vaultId": "v-work",
+        "name": "Légacy item — no created",
+        "fields": [
+          {
+            "name": "Note",
+            "type": "note",
+            "value": "Line 1\nLine 2 — ünïcödé 🔐"
+          }
+        ],
+        "tags": [],
+        "updated": "2024-02-29T23:59:59.999Z",
+        "history": []
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-1",
+        "name": "Acme",
+        "futureOrgProp": 42
+      }
+    ],
+    "favouriteIds": [
+      "i-github"
+    ],
+    "tagRegistry": [
+      "legacy-tag",
+      {
+        "name": "dev",
+        "created": "2026-01-02T03:04:05.006Z"
+      },
+      {
+        "name": "nodate"
+      },
+      {
+        "name": "with-extra",
+        "futureTagProp": "x"
+      }
+    ],
+    "exportHistory": [
+      {
+        "at": "2026-10-30T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 10,
+        "fileName": "keeperpass-0.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-29T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 11,
+        "fileName": "keeperpass-1.csv"
+      },
+      {
+        "at": "2026-10-28T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 12,
+        "fileName": "keeperpass-2.csv"
+      },
+      {
+        "at": "2026-10-27T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 13,
+        "fileName": "keeperpass-3.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-26T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 14,
+        "fileName": "keeperpass-4.csv"
+      },
+      {
+        "at": "2026-10-25T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 15,
+        "fileName": "keeperpass-5.csv"
+      },
+      {
+        "at": "2026-10-24T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 16,
+        "fileName": "keeperpass-6.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-23T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 17,
+        "fileName": "keeperpass-7.csv"
+      },
+      {
+        "at": "2026-10-22T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 18,
+        "fileName": "keeperpass-8.csv"
+      },
+      {
+        "at": "2026-10-21T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 19,
+        "fileName": "keeperpass-9.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-20T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 20,
+        "fileName": "keeperpass-10.csv"
+      },
+      {
+        "at": "2026-10-19T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 21,
+        "fileName": "keeperpass-11.csv"
+      }
+    ],
+    "futureTopLevel": {
+      "introducedIn": "9.9.9"
+    }
+  },
+  "webRoundTrip": {
+    "vaults": [
+      {
+        "id": "vault-personal",
+        "name": "My Vault",
+        "created": "2025-01-04T10:20:30.456Z",
+        "futureVaultProp": {
+          "nested": [
+            1,
+            "two"
+          ]
+        }
+      },
+      {
+        "id": "v-work",
+        "name": "Work",
+        "organizationId": "org-1",
+        "error": "Sync failed"
+      },
+      {
+        "id": "v-old",
+        "name": "Old one"
+      }
+    ],
+    "items": [
+      {
+        "id": "i-github",
+        "vaultId": "vault-personal",
+        "name": "GitHub",
+        "fields": [
+          {
+            "name": "Username",
+            "type": "username",
+            "value": "janedoe-dev"
+          },
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "Tq7#vR2m!xW9pL4@kZ8s",
+            "secret": true,
+            "futureFieldProp": "kept"
+          },
+          {
+            "name": "Website",
+            "type": "url",
+            "value": "github.com",
+            "iconGlyph": "f09b"
+          },
+          {
+            "name": "Authenticator Code",
+            "type": "totp",
+            "value": "JBSWY3DPEHPK3PXP"
+          },
+          {
+            "name": "Birthday",
+            "type": "date",
+            "value": "1992-04-12"
+          },
+          {
+            "name": "Expires On",
+            "type": "month",
+            "value": "2029-08"
+          },
+          {
+            "name": "Hologram",
+            "type": "future_field_type",
+            "value": "from a newer app"
+          }
+        ],
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "created": "2026-08-23T18:54:00.000Z",
+        "updated": "2026-10-30T09:41:12.345Z",
+        "expiresAfter": 90,
+        "expiresAt": "2027-01-28T09:41:12.345Z",
+        "icon": "web",
+        "iconGlyph": "f09b",
+        "futureItemField": {
+          "pinned": true
+        },
+        "history": [
+          {
+            "updated": "2026-10-21T18:54:00.000Z",
+            "name": "GitHub v7",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-0"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 0
+          },
+          {
+            "updated": "2026-10-20T18:54:00.001Z",
+            "name": "GitHub v6",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-1"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 1
+          },
+          {
+            "updated": "2026-10-19T18:54:00.002Z",
+            "name": "GitHub v5",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-2"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 2
+          },
+          {
+            "updated": "2026-10-18T18:54:00.003Z",
+            "name": "GitHub v4",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-3"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 3
+          },
+          {
+            "updated": "2026-10-17T18:54:00.004Z",
+            "name": "GitHub v3",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-4"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 4
+          }
+        ]
+      },
+      {
+        "id": "i-legacy",
+        "vaultId": "v-work",
+        "name": "Légacy item — no created",
+        "fields": [
+          {
+            "name": "Note",
+            "type": "note",
+            "value": "Line 1\nLine 2 — ünïcödé 🔐"
+          }
+        ],
+        "tags": [],
+        "updated": "2024-02-29T23:59:59.999Z",
+        "history": []
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-1",
+        "name": "Acme",
+        "futureOrgProp": 42
+      }
+    ],
+    "favouriteIds": [
+      "i-github"
+    ],
+    "tagRegistry": [
+      {
+        "name": "legacy-tag"
+      },
+      {
+        "name": "dev",
+        "created": "2026-01-02T03:04:05.006Z"
+      },
+      {
+        "name": "nodate"
+      },
+      {
+        "name": "with-extra"
+      }
+    ],
+    "exportHistory": [
+      {
+        "at": "2026-10-30T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 10,
+        "fileName": "keeperpass-0.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-29T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 11,
+        "fileName": "keeperpass-1.csv"
+      },
+      {
+        "at": "2026-10-28T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 12,
+        "fileName": "keeperpass-2.csv"
+      },
+      {
+        "at": "2026-10-27T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 13,
+        "fileName": "keeperpass-3.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-26T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 14,
+        "fileName": "keeperpass-4.csv"
+      },
+      {
+        "at": "2026-10-25T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 15,
+        "fileName": "keeperpass-5.csv"
+      },
+      {
+        "at": "2026-10-24T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 16,
+        "fileName": "keeperpass-6.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-23T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 17,
+        "fileName": "keeperpass-7.csv"
+      },
+      {
+        "at": "2026-10-22T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 18,
+        "fileName": "keeperpass-8.csv"
+      },
+      {
+        "at": "2026-10-21T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 19,
+        "fileName": "keeperpass-9.csv",
+        "futureExportProp": "x"
+      }
+    ]
+  }
+}

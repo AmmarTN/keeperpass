@@ -1,0 +1,1717 @@
+{
+  "source": "web/src/app/core/audit/audit.ts (bundled with esbuild, run in Node v20.19.0; Have I Been Pwned mocked)",
+  "cases": [
+    {
+      "name": "boards: weak, reused and compromised across items",
+      "breached": [
+        "Sunset-Lake-Shared-2019",
+        "hunter2"
+      ],
+      "items": [
+        {
+          "id": "netflix",
+          "vaultId": "vault-personal",
+          "name": "netflix",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "email",
+              "value": "jane@example.com"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "abc123"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "spotify",
+          "vaultId": "vault-personal",
+          "name": "spotify",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "spotify"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "instagram",
+          "vaultId": "vault-personal",
+          "name": "instagram",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane.photos"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "facebook",
+          "vaultId": "vault-personal",
+          "name": "facebook",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane92"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "hunter2"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "github",
+          "vaultId": "vault-personal",
+          "name": "github",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane-dev"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Tq7#vR2m!xW9pL4@kZ8s"
+            },
+            {
+              "name": "F2",
+              "type": "totp",
+              "value": "JBSWY3DPEHPK3PXP"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "notes",
+          "vaultId": "vault-personal",
+          "name": "notes",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "note",
+              "value": "abc123"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "empty",
+          "vaultId": "vault-personal",
+          "name": "empty",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": ""
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "6367c",
+        "6f774",
+        "75a25",
+        "df322",
+        "f3bbb"
+      ],
+      "findings": {
+        "netflix": [
+          {
+            "type": "weak_password",
+            "fieldIndex": 1
+          },
+          {
+            "type": "reused_password",
+            "fieldIndex": 2
+          },
+          {
+            "type": "compromised_password",
+            "fieldIndex": 2
+          }
+        ],
+        "spotify": [
+          {
+            "type": "weak_password",
+            "fieldIndex": 1
+          }
+        ],
+        "instagram": [
+          {
+            "type": "reused_password",
+            "fieldIndex": 1
+          },
+          {
+            "type": "compromised_password",
+            "fieldIndex": 1
+          }
+        ],
+        "facebook": [
+          {
+            "type": "reused_password",
+            "fieldIndex": 1
+          },
+          {
+            "type": "compromised_password",
+            "fieldIndex": 1
+          },
+          {
+            "type": "weak_password",
+            "fieldIndex": 2
+          },
+          {
+            "type": "compromised_password",
+            "fieldIndex": 2
+          }
+        ],
+        "github": [],
+        "notes": [],
+        "empty": []
+      }
+    },
+    {
+      "name": "boards: weak, reused and compromised across items (only netflix)",
+      "breached": [
+        "Sunset-Lake-Shared-2019",
+        "hunter2"
+      ],
+      "items": [
+        {
+          "id": "netflix",
+          "vaultId": "vault-personal",
+          "name": "netflix",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "email",
+              "value": "jane@example.com"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "abc123"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "spotify",
+          "vaultId": "vault-personal",
+          "name": "spotify",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "spotify"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "instagram",
+          "vaultId": "vault-personal",
+          "name": "instagram",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane.photos"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "facebook",
+          "vaultId": "vault-personal",
+          "name": "facebook",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane92"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "hunter2"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "github",
+          "vaultId": "vault-personal",
+          "name": "github",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane-dev"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Tq7#vR2m!xW9pL4@kZ8s"
+            },
+            {
+              "name": "F2",
+              "type": "totp",
+              "value": "JBSWY3DPEHPK3PXP"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "notes",
+          "vaultId": "vault-personal",
+          "name": "notes",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "note",
+              "value": "abc123"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "empty",
+          "vaultId": "vault-personal",
+          "name": "empty",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": ""
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "netflix",
+      "lookups": [
+        "6367c",
+        "6f774",
+        "75a25",
+        "df322",
+        "f3bbb"
+      ],
+      "findings": {
+        "netflix": [
+          {
+            "type": "weak_password",
+            "fieldIndex": 1
+          },
+          {
+            "type": "reused_password",
+            "fieldIndex": 2
+          },
+          {
+            "type": "compromised_password",
+            "fieldIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "only Password fields count; PINs, notes and secret text never",
+      "breached": [
+        "1234"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "pin",
+              "value": "1234"
+            },
+            {
+              "name": "F1",
+              "type": "secret",
+              "value": "1234"
+            },
+            {
+              "name": "F2",
+              "type": "text",
+              "value": "password"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "password"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "5baa6"
+      ],
+      "findings": {
+        "a": [],
+        "b": [
+          {
+            "type": "weak_password",
+            "fieldIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "only Password fields count; PINs, notes and secret text never (only a)",
+      "breached": [
+        "1234"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "pin",
+              "value": "1234"
+            },
+            {
+              "name": "F1",
+              "type": "secret",
+              "value": "1234"
+            },
+            {
+              "name": "F2",
+              "type": "text",
+              "value": "password"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "password"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "a",
+      "lookups": [
+        "5baa6"
+      ],
+      "findings": {
+        "a": []
+      }
+    },
+    {
+      "name": "the same password twice in one item is reused",
+      "breached": [],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Two-Fields-Same-Value-77"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Two-Fields-Same-Value-77"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "2cd5d"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "reused_password",
+            "fieldIndex": 0
+          },
+          {
+            "type": "reused_password",
+            "fieldIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "the same password twice in one item is reused (only a)",
+      "breached": [],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Two-Fields-Same-Value-77"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Two-Fields-Same-Value-77"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "a",
+      "lookups": [
+        "2cd5d"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "reused_password",
+            "fieldIndex": 0
+          },
+          {
+            "type": "reused_password",
+            "fieldIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "longer than 100 characters is never weak",
+      "breached": [
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "4dda8",
+        "50e48"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ],
+        "b": []
+      }
+    },
+    {
+      "name": "longer than 100 characters is never weak (only a)",
+      "breached": [
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "a",
+      "lookups": [
+        "4dda8",
+        "50e48"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "unicode, spaces and case are hashed as typed",
+      "breached": [
+        "Pässwörd 🔐"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "c",
+          "vaultId": "vault-personal",
+          "name": "c",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": " Pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "1b0fc",
+        "af521",
+        "d8dc9"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ],
+        "b": [],
+        "c": []
+      }
+    },
+    {
+      "name": "unicode, spaces and case are hashed as typed (only a)",
+      "breached": [
+        "Pässwörd 🔐"
+      ],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "c",
+          "vaultId": "vault-personal",
+          "name": "c",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": " Pässwörd 🔐"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "a",
+      "lookups": [
+        "1b0fc",
+        "af521",
+        "d8dc9"
+      ],
+      "findings": {
+        "a": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "more than ten distinct passwords: looked up ten at a time",
+      "breached": [
+        "Distinct-Password-07",
+        "Distinct-Password-12"
+      ],
+      "items": [
+        {
+          "id": "i0",
+          "vaultId": "vault-personal",
+          "name": "i0",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-00"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i1",
+          "vaultId": "vault-personal",
+          "name": "i1",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-01"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i2",
+          "vaultId": "vault-personal",
+          "name": "i2",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-02"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i3",
+          "vaultId": "vault-personal",
+          "name": "i3",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-03"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i4",
+          "vaultId": "vault-personal",
+          "name": "i4",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-04"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i5",
+          "vaultId": "vault-personal",
+          "name": "i5",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-05"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i6",
+          "vaultId": "vault-personal",
+          "name": "i6",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-06"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i7",
+          "vaultId": "vault-personal",
+          "name": "i7",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-07"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i8",
+          "vaultId": "vault-personal",
+          "name": "i8",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-08"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i9",
+          "vaultId": "vault-personal",
+          "name": "i9",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-09"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i10",
+          "vaultId": "vault-personal",
+          "name": "i10",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-10"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i11",
+          "vaultId": "vault-personal",
+          "name": "i11",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-11"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i12",
+          "vaultId": "vault-personal",
+          "name": "i12",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-12"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i13",
+          "vaultId": "vault-personal",
+          "name": "i13",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-13"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [
+        "1172a",
+        "4d908",
+        "6950b",
+        "7bb24",
+        "816d1",
+        "8b722",
+        "a0690",
+        "a3953",
+        "ab43a",
+        "bd221",
+        "d8e44",
+        "e35e6",
+        "f7ab6",
+        "f8dd4"
+      ],
+      "findings": {
+        "i0": [],
+        "i1": [],
+        "i2": [],
+        "i3": [],
+        "i4": [],
+        "i5": [],
+        "i6": [],
+        "i7": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ],
+        "i8": [],
+        "i9": [],
+        "i10": [],
+        "i11": [],
+        "i12": [
+          {
+            "type": "compromised_password",
+            "fieldIndex": 0
+          }
+        ],
+        "i13": []
+      }
+    },
+    {
+      "name": "more than ten distinct passwords: looked up ten at a time (only i0)",
+      "breached": [
+        "Distinct-Password-07",
+        "Distinct-Password-12"
+      ],
+      "items": [
+        {
+          "id": "i0",
+          "vaultId": "vault-personal",
+          "name": "i0",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-00"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i1",
+          "vaultId": "vault-personal",
+          "name": "i1",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-01"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i2",
+          "vaultId": "vault-personal",
+          "name": "i2",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-02"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i3",
+          "vaultId": "vault-personal",
+          "name": "i3",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-03"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i4",
+          "vaultId": "vault-personal",
+          "name": "i4",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-04"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i5",
+          "vaultId": "vault-personal",
+          "name": "i5",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-05"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i6",
+          "vaultId": "vault-personal",
+          "name": "i6",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-06"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i7",
+          "vaultId": "vault-personal",
+          "name": "i7",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-07"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i8",
+          "vaultId": "vault-personal",
+          "name": "i8",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-08"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i9",
+          "vaultId": "vault-personal",
+          "name": "i9",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-09"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i10",
+          "vaultId": "vault-personal",
+          "name": "i10",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-10"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i11",
+          "vaultId": "vault-personal",
+          "name": "i11",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-11"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i12",
+          "vaultId": "vault-personal",
+          "name": "i12",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-12"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "i13",
+          "vaultId": "vault-personal",
+          "name": "i13",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": "Distinct-Password-13"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "i0",
+      "lookups": [
+        "1172a",
+        "4d908",
+        "6950b",
+        "7bb24",
+        "816d1",
+        "8b722",
+        "a0690",
+        "a3953",
+        "ab43a",
+        "bd221",
+        "d8e44",
+        "e35e6",
+        "f7ab6",
+        "f8dd4"
+      ],
+      "findings": {
+        "i0": []
+      }
+    },
+    {
+      "name": "nothing to check",
+      "breached": [],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "lookups": [],
+      "findings": {
+        "a": [],
+        "b": []
+      }
+    },
+    {
+      "name": "nothing to check (only a)",
+      "breached": [],
+      "items": [
+        {
+          "id": "a",
+          "vaultId": "vault-personal",
+          "name": "a",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "b",
+          "vaultId": "vault-personal",
+          "name": "b",
+          "fields": [],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": "a",
+      "lookups": [],
+      "findings": {
+        "a": []
+      }
+    },
+    {
+      "name": "lookup refused (429)",
+      "breached": [],
+      "failStatus": 429,
+      "items": [
+        {
+          "id": "netflix",
+          "vaultId": "vault-personal",
+          "name": "netflix",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "email",
+              "value": "jane@example.com"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "abc123"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "spotify",
+          "vaultId": "vault-personal",
+          "name": "spotify",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "spotify"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "instagram",
+          "vaultId": "vault-personal",
+          "name": "instagram",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane.photos"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "facebook",
+          "vaultId": "vault-personal",
+          "name": "facebook",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane92"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "hunter2"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "github",
+          "vaultId": "vault-personal",
+          "name": "github",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane-dev"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Tq7#vR2m!xW9pL4@kZ8s"
+            },
+            {
+              "name": "F2",
+              "type": "totp",
+              "value": "JBSWY3DPEHPK3PXP"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "notes",
+          "vaultId": "vault-personal",
+          "name": "notes",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "note",
+              "value": "abc123"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "empty",
+          "vaultId": "vault-personal",
+          "name": "empty",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": ""
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "failed": true
+    },
+    {
+      "name": "lookup refused (503)",
+      "breached": [],
+      "failStatus": 503,
+      "items": [
+        {
+          "id": "netflix",
+          "vaultId": "vault-personal",
+          "name": "netflix",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "email",
+              "value": "jane@example.com"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "abc123"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "spotify",
+          "vaultId": "vault-personal",
+          "name": "spotify",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "spotify"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "instagram",
+          "vaultId": "vault-personal",
+          "name": "instagram",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane.photos"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "facebook",
+          "vaultId": "vault-personal",
+          "name": "facebook",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane92"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Sunset-Lake-Shared-2019"
+            },
+            {
+              "name": "F2",
+              "type": "password",
+              "value": "hunter2"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "github",
+          "vaultId": "vault-personal",
+          "name": "github",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "username",
+              "value": "jane-dev"
+            },
+            {
+              "name": "F1",
+              "type": "password",
+              "value": "Tq7#vR2m!xW9pL4@kZ8s"
+            },
+            {
+              "name": "F2",
+              "type": "totp",
+              "value": "JBSWY3DPEHPK3PXP"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "notes",
+          "vaultId": "vault-personal",
+          "name": "notes",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "note",
+              "value": "abc123"
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        },
+        {
+          "id": "empty",
+          "vaultId": "vault-personal",
+          "name": "empty",
+          "fields": [
+            {
+              "name": "F0",
+              "type": "password",
+              "value": ""
+            }
+          ],
+          "tags": [],
+          "history": [],
+          "updated": "2026-11-01T09:41:00.000Z"
+        }
+      ],
+      "onlyItemId": null,
+      "failed": true
+    }
+  ]
+}

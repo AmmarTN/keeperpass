@@ -1,0 +1,526 @@
+{
+  "source": "web/src/app/core/validation/*.ts (bundled with esbuild, run in Node v20.19.0)",
+  "strength": [
+    {
+      "password": "",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "a",
+      "score": 0,
+      "entropy": 4.700439718141092
+    },
+    {
+      "password": "aaaa",
+      "score": 0,
+      "entropy": 9.400879436282183
+    },
+    {
+      "password": "abcd",
+      "score": 0,
+      "entropy": 9.400879436282183
+    },
+    {
+      "password": "dcba",
+      "score": 0,
+      "entropy": 9.400879436282183
+    },
+    {
+      "password": "1234",
+      "score": 0,
+      "entropy": 6.643856189774724
+    },
+    {
+      "password": "password",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "PASSWORD",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "P@ssw0rd",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "Tr0ub4dor&3",
+      "score": 3,
+      "entropy": 72.26841169164042
+    },
+    {
+      "password": "correct horse battery staple",
+      "score": 4,
+      "entropy": 150.00739775872697
+    },
+    {
+      "password": "eggplant-twenty-oboe-decree-daringly",
+      "score": 4,
+      "entropy": 202.95118520298354
+    },
+    {
+      "password": "Tq7#vR2m!xW9pL4@kZ8s",
+      "score": 4,
+      "entropy": 131.39711216661897
+    },
+    {
+      "password": "ÄÖÜäöü",
+      "score": 1,
+      "entropy": 30.26636471615072
+    },
+    {
+      "password": "🔐🔐🔐🔐",
+      "score": 2,
+      "entropy": 40.35515295486763
+    },
+    {
+      "password": "🔐a🔑b🗝c",
+      "score": 2,
+      "entropy": 52.94378744425657
+    },
+    {
+      "password": "a😀😁😂",
+      "score": 2,
+      "entropy": 41.178501345532894
+    },
+    {
+      "password": "xyzxyzxyz",
+      "score": 0,
+      "entropy": 24.677308520240732
+    },
+    {
+      "password": "aAbBcC",
+      "score": 1,
+      "entropy": 34.20263830884655
+    },
+    {
+      "password": "zyxwvuts",
+      "score": 0,
+      "entropy": 14.101319154423276
+    },
+    {
+      "password": "😀😁😂🤣",
+      "score": 2,
+      "entropy": 40.35515295486763
+    },
+    {
+      "password": "secret",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "Secret",
+      "score": 0,
+      "entropy": 0
+    },
+    {
+      "password": "päss",
+      "score": 0,
+      "entropy": 20.589250672766447
+    },
+    {
+      "password": "0123456789",
+      "score": 0,
+      "entropy": 11.626748332105768
+    },
+    {
+      "password": "ab12CD!@ef34GH#$",
+      "score": 4,
+      "entropy": 82.12319510413685
+    }
+  ],
+  "cards": [
+    {
+      "value": "4111 1111 1111 1111",
+      "digits": "4111111111111111",
+      "brand": "visa",
+      "complete": true,
+      "valid": true,
+      "formatted": "4111 1111 1111 1111",
+      "luhn": true
+    },
+    {
+      "value": "4111-1111-1111-1112",
+      "digits": "4111111111111112",
+      "brand": "visa",
+      "complete": true,
+      "valid": false,
+      "formatted": "4111 1111 1111 1112",
+      "luhn": false
+    },
+    {
+      "value": "378282246310005",
+      "digits": "378282246310005",
+      "brand": "amex",
+      "complete": true,
+      "valid": true,
+      "formatted": "3782 822463 10005",
+      "luhn": true
+    },
+    {
+      "value": "3782 822463 10005",
+      "digits": "378282246310005",
+      "brand": "amex",
+      "complete": true,
+      "valid": true,
+      "formatted": "3782 822463 10005",
+      "luhn": true
+    },
+    {
+      "value": "5555555555554444",
+      "digits": "5555555555554444",
+      "brand": "mastercard",
+      "complete": true,
+      "valid": true,
+      "formatted": "5555 5555 5555 4444",
+      "luhn": true
+    },
+    {
+      "value": "2223003122003222",
+      "digits": "2223003122003222",
+      "brand": "mastercard",
+      "complete": true,
+      "valid": true,
+      "formatted": "2223 0031 2200 3222",
+      "luhn": true
+    },
+    {
+      "value": "6011111111111117",
+      "digits": "6011111111111117",
+      "brand": "discover",
+      "complete": true,
+      "valid": true,
+      "formatted": "6011 1111 1111 1117",
+      "luhn": true
+    },
+    {
+      "value": "30569309025904",
+      "digits": "30569309025904",
+      "brand": "diners",
+      "complete": true,
+      "valid": true,
+      "formatted": "3056 930902 5904",
+      "luhn": true
+    },
+    {
+      "value": "3566002020360505",
+      "digits": "3566002020360505",
+      "brand": "jcb",
+      "complete": true,
+      "valid": true,
+      "formatted": "3566 0020 2036 0505",
+      "luhn": true
+    },
+    {
+      "value": "6200000000000005",
+      "digits": "6200000000000005",
+      "brand": "unionpay",
+      "complete": true,
+      "valid": true,
+      "formatted": "6200 0000 0000 0005",
+      "luhn": true
+    },
+    {
+      "value": "6759649826438453",
+      "digits": "6759649826438453",
+      "brand": "maestro",
+      "complete": true,
+      "valid": true,
+      "formatted": "6759 6498 2643 8453",
+      "luhn": true
+    },
+    {
+      "value": "2200123456789010",
+      "digits": "2200123456789010",
+      "brand": "mir",
+      "complete": true,
+      "valid": false,
+      "formatted": "2200 1234 5678 9010",
+      "luhn": false
+    },
+    {
+      "value": "6062821086773091",
+      "digits": "6062821086773091",
+      "brand": "hipercard",
+      "complete": true,
+      "valid": true,
+      "formatted": "6062 8210 8677 3091",
+      "luhn": true
+    },
+    {
+      "value": "9792123456789012",
+      "digits": "9792123456789012",
+      "brand": "troy",
+      "complete": true,
+      "valid": false,
+      "formatted": "9792 1234 5678 9012",
+      "luhn": false
+    },
+    {
+      "value": "122000000000003",
+      "digits": "122000000000003",
+      "brand": "uatp",
+      "complete": true,
+      "valid": true,
+      "formatted": "1220 0000 0000 003",
+      "luhn": true
+    },
+    {
+      "value": "",
+      "digits": "",
+      "brand": null,
+      "complete": false,
+      "valid": false,
+      "formatted": "",
+      "luhn": false
+    },
+    {
+      "value": "abc",
+      "digits": "",
+      "brand": null,
+      "complete": false,
+      "valid": false,
+      "formatted": "",
+      "luhn": false
+    },
+    {
+      "value": "4",
+      "digits": "4",
+      "brand": "visa",
+      "complete": false,
+      "valid": false,
+      "formatted": "4",
+      "luhn": false
+    },
+    {
+      "value": "41",
+      "digits": "41",
+      "brand": "visa",
+      "complete": false,
+      "valid": false,
+      "formatted": "41",
+      "luhn": false
+    },
+    {
+      "value": "4111111111111111111",
+      "digits": "4111111111111111111",
+      "brand": "visa",
+      "complete": true,
+      "valid": false,
+      "formatted": "4111 1111 1111 1111 111",
+      "luhn": false
+    },
+    {
+      "value": "36227206271667",
+      "digits": "36227206271667",
+      "brand": "diners",
+      "complete": true,
+      "valid": true,
+      "formatted": "3622 720627 1667",
+      "luhn": true
+    }
+  ],
+  "emails": [
+    {
+      "value": "jane@example.com",
+      "normalized": "jane@example.com",
+      "valid": true
+    },
+    {
+      "value": " jane@example.com ",
+      "normalized": "jane@example.com",
+      "valid": true
+    },
+    {
+      "value": "a@b",
+      "normalized": "a@b",
+      "valid": false
+    },
+    {
+      "value": "a@b.c",
+      "normalized": "a@b.c",
+      "valid": false
+    },
+    {
+      "value": "a@b.co",
+      "normalized": "a@b.co",
+      "valid": true
+    },
+    {
+      "value": "a@b.c0",
+      "normalized": "a@b.c0",
+      "valid": false
+    },
+    {
+      "value": "jane.doe+tag@sub.example.co.uk",
+      "normalized": "jane.doe+tag@sub.example.co.uk",
+      "valid": true
+    },
+    {
+      "value": "jane@@example.com",
+      "normalized": "jane@@example.com",
+      "valid": false
+    },
+    {
+      "value": "jane@example..com",
+      "normalized": "jane@example..com",
+      "valid": false
+    },
+    {
+      "value": "jane @example.com",
+      "normalized": "jane @example.com",
+      "valid": false
+    },
+    {
+      "value": "ünï@exämple.de",
+      "normalized": "ünï@exämple.de",
+      "valid": true
+    },
+    {
+      "value": "jane@example.com​",
+      "normalized": "jane@example.com​",
+      "valid": false
+    },
+    {
+      "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@ex.com",
+      "normalized": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@ex.com",
+      "valid": false
+    },
+    {
+      "value": "",
+      "normalized": "",
+      "valid": false
+    }
+  ],
+  "safety": [
+    {
+      "value": "plain",
+      "control": false,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": true,
+      "stripped": "plain"
+    },
+    {
+      "value": "tab\there",
+      "control": false,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": true,
+      "stripped": "tab\there"
+    },
+    {
+      "value": "bell\u0007",
+      "control": true,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "bell"
+    },
+    {
+      "value": "del",
+      "control": true,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "del"
+    },
+    {
+      "value": "c1",
+      "control": true,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "c1"
+    },
+    {
+      "value": "rtl‮",
+      "control": false,
+      "bidi": true,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "rtl"
+    },
+    {
+      "value": "lrm‎",
+      "control": false,
+      "bidi": true,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "lrm"
+    },
+    {
+      "value": "iso⁦x⁩",
+      "control": false,
+      "bidi": true,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "isox"
+    },
+    {
+      "value": "zwsp​",
+      "control": false,
+      "bidi": false,
+      "invisible": true,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "zwsp"
+    },
+    {
+      "value": "wj⁠",
+      "control": false,
+      "bidi": false,
+      "invisible": true,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "wj"
+    },
+    {
+      "value": "bom﻿",
+      "control": false,
+      "bidi": false,
+      "invisible": true,
+      "lineBreak": false,
+      "safe": false,
+      "stripped": "bom"
+    },
+    {
+      "value": "line\nbreak",
+      "control": false,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": true,
+      "safe": true,
+      "stripped": "line\nbreak"
+    },
+    {
+      "value": "cr\rreturn",
+      "control": false,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": true,
+      "safe": true,
+      "stripped": "cr\rreturn"
+    },
+    {
+      "value": "emoji🔐",
+      "control": false,
+      "bidi": false,
+      "invisible": false,
+      "lineBreak": false,
+      "safe": true,
+      "stripped": "emoji🔐"
+    }
+  ]
+}

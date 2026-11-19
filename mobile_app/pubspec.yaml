@@ -1,0 +1,95 @@
+name: keeperpass
+description: "KeeperPass — the mobile app for the KeeperPass password manager."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  auto_route: ^11.1.0
+  crypto: ^3.0.8
+  cryptography: ^2.9.0
+  dartz: ^0.10.1
+  dio: ^5.11.1
+  equatable: ^3.0.0
+  file_picker: ^13.3.0
+  flutter:
+    sdk: flutter
+  flutter_appauth: ^12.1.0
+  flutter_bloc: ^9.1.1
+  flutter_dotenv: ^6.0.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  flutter_secure_storage: ^11.2.0
+  flutter_svg: ^2.3.0
+  freezed_annotation: ^3.1.0
+  get_it: ^9.2.1
+  google_fonts: ^8.2.1
+  google_sign_in: ^7.2.0
+  hive_flutter: ^1.1.0
+  injectable: ^3.0.0
+  internet_connection_checker_plus: ^3.1.1
+  intl: ^0.20.2
+  json_annotation: ^4.12.0
+  logger: ^2.7.0
+  lucide_icons_flutter: ^4.0.1
+  mobile_scanner: ^7.4.2
+  no_screenshot: ^2.0.1
+  permission_handler: ^12.0.3
+  share_plus: ^13.3.1
+  slang: ^4.18.0
+  slang_flutter: ^4.18.0
+  unorm_dart: ^0.3.3
+  url_launcher: ^6.3.3
+  uuid: ^4.6.0
+
+dev_dependencies:
+  auto_route_generator: ^10.5.0
+  bloc_test: ^10.0.0
+  build_runner: ^2.15.1
+  freezed: ^3.2.5
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^3.0.2
+  json_serializable: ^6.14.1
+  mocktail: ^1.0.5
+
+# dart run flutter_launcher_icons — board Brand: white mark on #000000.
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+
+  remove_alpha_ios: true
+  image_path: "../brand/keeperpass-icon-1024.png"
+  adaptive_icon_background: "#000000"
+  # Full 108 dp layer, mark 42 x 50 dp centred (board), so no extra inset.
+  adaptive_icon_foreground: "brand/adaptive_icon_foreground.png"
+  adaptive_icon_foreground_inset: 0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/env/
+    - assets/animations/
+    - assets/card_networks/
+    - assets/fonts/
+    - assets/icons/png/
+    - assets/icons/svg/
+    - assets/images/png/
+    - assets/images/svg/
+    - assets/i18n/
+    - assets/wordlists/
+  # Nunito and Space Mono are found by google_fonts in assets/fonts/ (runtime
+  # fetching is off). Font Awesome Pro is drawn as text, like the web.
+  fonts:
+    - family: FontAwesome
+      fonts:
+        - asset: assets/fonts/fontawesome/FontAwesome-Light.ttf
+          weight: 300
+        - asset: assets/fonts/fontawesome/FontAwesome-Solid.ttf
+          weight: 900

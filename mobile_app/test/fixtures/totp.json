@@ -1,0 +1,908 @@
+{
+  "source": "web/src/app/core/otp/totp.ts (bundled with esbuild, run in Node v20.19.0)",
+  "cases": [
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 59000,
+      "digits": 8,
+      "period": 30,
+      "code": "94287082"
+    },
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 1111111109000,
+      "digits": 8,
+      "period": 30,
+      "code": "07081804"
+    },
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 1111111111000,
+      "digits": 8,
+      "period": 30,
+      "code": "14050471"
+    },
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 1234567890000,
+      "digits": 8,
+      "period": 30,
+      "code": "89005924"
+    },
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 2000000000000,
+      "digits": 8,
+      "period": 30,
+      "code": "69279037"
+    },
+    {
+      "secret": "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",
+      "timestamp": 20000000000000,
+      "digits": 8,
+      "period": 30,
+      "code": "65353130"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 0,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 0,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 0,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1000,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1000,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 29999,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 29999,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 29999,
+      "digits": 7,
+      "period": 15,
+      "code": "1996554"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 30000,
+      "digits": 6,
+      "period": 30,
+      "code": "996554"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 30000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 30000,
+      "digits": 7,
+      "period": 15,
+      "code": "8602287"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1730284800123,
+      "digits": 6,
+      "period": 30,
+      "code": "649221"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1730284800123,
+      "digits": 8,
+      "period": 60,
+      "code": "82468298"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1730284800123,
+      "digits": 7,
+      "period": 15,
+      "code": "9188914"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1761825600456,
+      "digits": 6,
+      "period": 30,
+      "code": "431442"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1761825600456,
+      "digits": 8,
+      "period": 60,
+      "code": "17047734"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 1761825600456,
+      "digits": 7,
+      "period": 15,
+      "code": "1466983"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 4102444800000,
+      "digits": 6,
+      "period": 30,
+      "code": "573258"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 4102444800000,
+      "digits": 8,
+      "period": 60,
+      "code": "16617627"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP",
+      "timestamp": 4102444800000,
+      "digits": 7,
+      "period": 15,
+      "code": "4072806"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 0,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 0,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 0,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1000,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1000,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 29999,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 29999,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 29999,
+      "digits": 7,
+      "period": 15,
+      "code": "1996554"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 30000,
+      "digits": 6,
+      "period": 30,
+      "code": "996554"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 30000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 30000,
+      "digits": 7,
+      "period": 15,
+      "code": "8602287"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1730284800123,
+      "digits": 6,
+      "period": 30,
+      "code": "649221"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1730284800123,
+      "digits": 8,
+      "period": 60,
+      "code": "82468298"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1730284800123,
+      "digits": 7,
+      "period": 15,
+      "code": "9188914"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1761825600456,
+      "digits": 6,
+      "period": 30,
+      "code": "431442"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1761825600456,
+      "digits": 8,
+      "period": 60,
+      "code": "17047734"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 1761825600456,
+      "digits": 7,
+      "period": 15,
+      "code": "1466983"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 4102444800000,
+      "digits": 6,
+      "period": 30,
+      "code": "573258"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 4102444800000,
+      "digits": 8,
+      "period": 60,
+      "code": "16617627"
+    },
+    {
+      "secret": "jbsw y3dp ehpk 3pxp",
+      "timestamp": 4102444800000,
+      "digits": 7,
+      "period": 15,
+      "code": "4072806"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 0,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 0,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 0,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1000,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1000,
+      "digits": 7,
+      "period": 15,
+      "code": "3282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 29999,
+      "digits": 6,
+      "period": 30,
+      "code": "282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 29999,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 29999,
+      "digits": 7,
+      "period": 15,
+      "code": "1996554"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 30000,
+      "digits": 6,
+      "period": 30,
+      "code": "996554"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 30000,
+      "digits": 8,
+      "period": 60,
+      "code": "63282760"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 30000,
+      "digits": 7,
+      "period": 15,
+      "code": "8602287"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1730284800123,
+      "digits": 6,
+      "period": 30,
+      "code": "649221"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1730284800123,
+      "digits": 8,
+      "period": 60,
+      "code": "82468298"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1730284800123,
+      "digits": 7,
+      "period": 15,
+      "code": "9188914"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1761825600456,
+      "digits": 6,
+      "period": 30,
+      "code": "431442"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1761825600456,
+      "digits": 8,
+      "period": 60,
+      "code": "17047734"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 1761825600456,
+      "digits": 7,
+      "period": 15,
+      "code": "1466983"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 4102444800000,
+      "digits": 6,
+      "period": 30,
+      "code": "573258"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 4102444800000,
+      "digits": 8,
+      "period": 60,
+      "code": "16617627"
+    },
+    {
+      "secret": "JBSWY3DPEHPK3PXP====",
+      "timestamp": 4102444800000,
+      "digits": 7,
+      "period": 15,
+      "code": "4072806"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 0,
+      "digits": 6,
+      "period": 30,
+      "code": "385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 0,
+      "digits": 8,
+      "period": 60,
+      "code": "01385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 0,
+      "digits": 7,
+      "period": 15,
+      "code": "1385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1000,
+      "digits": 6,
+      "period": 30,
+      "code": "385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1000,
+      "digits": 8,
+      "period": 60,
+      "code": "01385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1000,
+      "digits": 7,
+      "period": 15,
+      "code": "1385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 29999,
+      "digits": 6,
+      "period": 30,
+      "code": "385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 29999,
+      "digits": 8,
+      "period": 60,
+      "code": "01385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 29999,
+      "digits": 7,
+      "period": 15,
+      "code": "0493729"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 30000,
+      "digits": 6,
+      "period": 30,
+      "code": "493729"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 30000,
+      "digits": 8,
+      "period": 60,
+      "code": "01385551"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 30000,
+      "digits": 7,
+      "period": 15,
+      "code": "1139766"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1730284800123,
+      "digits": 6,
+      "period": 30,
+      "code": "452448"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1730284800123,
+      "digits": 8,
+      "period": 60,
+      "code": "33852683"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1730284800123,
+      "digits": 7,
+      "period": 15,
+      "code": "6305301"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1761825600456,
+      "digits": 6,
+      "period": 30,
+      "code": "267939"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1761825600456,
+      "digits": 8,
+      "period": 60,
+      "code": "98719664"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 1761825600456,
+      "digits": 7,
+      "period": 15,
+      "code": "3143951"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 4102444800000,
+      "digits": 6,
+      "period": 30,
+      "code": "717888"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 4102444800000,
+      "digits": 8,
+      "period": 60,
+      "code": "75649046"
+    },
+    {
+      "secret": "KRSXG5CTMVRXEZLUKN2XAZLSKNSWG4TFOQ",
+      "timestamp": 4102444800000,
+      "digits": 7,
+      "period": 15,
+      "code": "1776601"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 0,
+      "digits": 6,
+      "period": 30,
+      "code": "761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 0,
+      "digits": 8,
+      "period": 60,
+      "code": "82761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 0,
+      "digits": 7,
+      "period": 15,
+      "code": "2761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1000,
+      "digits": 6,
+      "period": 30,
+      "code": "761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1000,
+      "digits": 8,
+      "period": 60,
+      "code": "82761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1000,
+      "digits": 7,
+      "period": 15,
+      "code": "2761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 29999,
+      "digits": 6,
+      "period": 30,
+      "code": "761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 29999,
+      "digits": 8,
+      "period": 60,
+      "code": "82761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 29999,
+      "digits": 7,
+      "period": 15,
+      "code": "4024491"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 30000,
+      "digits": 6,
+      "period": 30,
+      "code": "024491"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 30000,
+      "digits": 8,
+      "period": 60,
+      "code": "82761545"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 30000,
+      "digits": 7,
+      "period": 15,
+      "code": "0519329"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1730284800123,
+      "digits": 6,
+      "period": 30,
+      "code": "114294"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1730284800123,
+      "digits": 8,
+      "period": 60,
+      "code": "98314424"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1730284800123,
+      "digits": 7,
+      "period": 15,
+      "code": "9961076"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1761825600456,
+      "digits": 6,
+      "period": 30,
+      "code": "602122"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1761825600456,
+      "digits": 8,
+      "period": 60,
+      "code": "59958457"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 1761825600456,
+      "digits": 7,
+      "period": 15,
+      "code": "6949840"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 4102444800000,
+      "digits": 6,
+      "period": 30,
+      "code": "815222"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 4102444800000,
+      "digits": 8,
+      "period": 60,
+      "code": "95877316"
+    },
+    {
+      "secret": "MFRGGZDFMZTWQ2LKNNWG23TPOBYXE43UOV3HO6DZPI",
+      "timestamp": 4102444800000,
+      "digits": 7,
+      "period": 15,
+      "code": "8891739"
+    }
+  ],
+  "counters": [
+    {
+      "timestamp": 0,
+      "period": 30,
+      "counter": 0,
+      "progress": 0
+    },
+    {
+      "timestamp": 0,
+      "period": 60,
+      "counter": 0,
+      "progress": 0
+    },
+    {
+      "timestamp": 1000,
+      "period": 30,
+      "counter": 0,
+      "progress": 0.03333333333333333
+    },
+    {
+      "timestamp": 1000,
+      "period": 60,
+      "counter": 0,
+      "progress": 0.016666666666666666
+    },
+    {
+      "timestamp": 29999,
+      "period": 30,
+      "counter": 0,
+      "progress": 0.9999666666666667
+    },
+    {
+      "timestamp": 29999,
+      "period": 60,
+      "counter": 0,
+      "progress": 0.49998333333333334
+    },
+    {
+      "timestamp": 30000,
+      "period": 30,
+      "counter": 1,
+      "progress": 0
+    },
+    {
+      "timestamp": 30000,
+      "period": 60,
+      "counter": 0,
+      "progress": 0.5
+    },
+    {
+      "timestamp": 1730284800123,
+      "period": 30,
+      "counter": 57676160,
+      "progress": 0.0040999968846639
+    },
+    {
+      "timestamp": 1730284800123,
+      "period": 60,
+      "counter": 28838080,
+      "progress": 0.00204999844233195
+    },
+    {
+      "timestamp": 1761825600456,
+      "period": 30,
+      "counter": 58727520,
+      "progress": 0.015200002988179525
+    },
+    {
+      "timestamp": 1761825600456,
+      "period": 60,
+      "counter": 29363760,
+      "progress": 0.0076000014940897625
+    },
+    {
+      "timestamp": 4102444800000,
+      "period": 30,
+      "counter": 136748160,
+      "progress": 0
+    },
+    {
+      "timestamp": 4102444800000,
+      "period": 60,
+      "counter": 68374080,
+      "progress": 0
+    }
+  ],
+  "base32": [
+    {
+      "input": "JBSWY3DPEHPK3PXP",
+      "hex": "48656c6c6f21deadbeef"
+    },
+    {
+      "input": "MZXW6YQ=",
+      "hex": "666f6f62"
+    },
+    {
+      "input": " my ",
+      "hex": "66"
+    },
+    {
+      "input": "GEZDGNBVGY3TQOJQ",
+      "hex": "31323334353637383930"
+    },
+    {
+      "input": "A",
+      "hex": ""
+    },
+    {
+      "input": "AB",
+      "hex": "00"
+    }
+  ],
+  "invalid": [
+    {
+      "input": "JBSW1",
+      "error": "\"1\" is not a valid base32 character."
+    },
+    {
+      "input": "ABC!",
+      "error": "\"!\" is not a valid base32 character."
+    },
+    {
+      "input": "Ü",
+      "error": "\"Ü\" is not a valid base32 character."
+    }
+  ]
+}

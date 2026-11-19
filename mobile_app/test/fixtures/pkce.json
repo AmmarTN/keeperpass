@@ -1,0 +1,17 @@
+{
+  "source": "web/src/app/core/providers/dropbox/pkce.ts (bundled with esbuild, run in Node v20.19.0)",
+  "cases": [
+    {
+      "verifier": "dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk",
+      "challenge": "E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM"
+    },
+    {
+      "verifier": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "challenge": "ZtNPunH49FD35FWYhT5Tv8I7vRKQJ8uxMaL0_9eHjNA"
+    },
+    {
+      "verifier": "A-b_c.d~e99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+      "challenge": "dIhTSudNK99TkLtNYY3Ulc4_GhgAtuQZMd-xyK93oWc"
+    }
+  ]
+}

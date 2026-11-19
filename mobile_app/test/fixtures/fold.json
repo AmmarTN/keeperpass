@@ -1,0 +1,193 @@
+{
+  "source": "web/src/app/core/text/fold.ts (bundled with esbuild, run in Node v20.19.0)",
+  "cases": [
+    {
+      "value": "",
+      "folded": ""
+    },
+    {
+      "value": " ",
+      "folded": ""
+    },
+    {
+      "value": "a",
+      "folded": "a"
+    },
+    {
+      "value": "password",
+      "folded": "password"
+    },
+    {
+      "value": "P@ssw0rd!",
+      "folded": "p@ssw0rd!"
+    },
+    {
+      "value": "pässwörd",
+      "folded": "password"
+    },
+    {
+      "value": "Ελληνικά",
+      "folded": "ελληνικα"
+    },
+    {
+      "value": "日本語",
+      "folded": "日本語"
+    },
+    {
+      "value": "🔐🗝️",
+      "folded": "🔐🗝️"
+    },
+    {
+      "value": "line\nbreak",
+      "folded": "line\nbreak"
+    },
+    {
+      "value": "tab\tand  spaces ",
+      "folded": "tab\tand  spaces"
+    },
+    {
+      "value": " nbsp ",
+      "folded": "nbsp"
+    },
+    {
+      "value": "áè",
+      "folded": "ae"
+    },
+    {
+      "value": "İstanbul",
+      "folded": "istanbul"
+    },
+    {
+      "value": "Straße",
+      "folded": "straße"
+    },
+    {
+      "value": "ǅemal",
+      "folded": "ǆemal"
+    },
+    {
+      "value": "ﬁ ligature",
+      "folded": "ﬁ ligature"
+    },
+    {
+      "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "folded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "value": "\ud83d",
+      "folded": "\ud83d"
+    },
+    {
+      "value": "\udc00x",
+      "folded": "\udc00x"
+    },
+    {
+      "value": "Café",
+      "folded": "cafe"
+    },
+    {
+      "value": "CRÈME BRÛLÉE",
+      "folded": "creme brulee"
+    },
+    {
+      "value": "naïve",
+      "folded": "naive"
+    },
+    {
+      "value": "Ångström",
+      "folded": "angstrom"
+    },
+    {
+      "value": "Ærøskøbing",
+      "folded": "ærøskøbing"
+    },
+    {
+      "value": "Łódź",
+      "folded": "łodz"
+    },
+    {
+      "value": "Đà Nẵng",
+      "folded": "đa nang"
+    },
+    {
+      "value": "Tiếng Việt",
+      "folded": "tieng viet"
+    },
+    {
+      "value": "Ünïcödé",
+      "folded": "unicode"
+    },
+    {
+      "value": "ÉCOLE",
+      "folded": "ecole"
+    },
+    {
+      "value": "çédille",
+      "folded": "cedille"
+    },
+    {
+      "value": "Ñandú",
+      "folded": "nandu"
+    },
+    {
+      "value": "ΆΈΉ",
+      "folded": "αεη"
+    },
+    {
+      "value": "Ä̈",
+      "folded": "a"
+    },
+    {
+      "value": "x^y",
+      "folded": "xy"
+    },
+    {
+      "value": "grave`",
+      "folded": "grave"
+    },
+    {
+      "value": "diaeresis¨",
+      "folded": "diaeresis"
+    },
+    {
+      "value": "acute´",
+      "folded": "acute"
+    },
+    {
+      "value": "ˆcircumflex",
+      "folded": "circumflex"
+    },
+    {
+      "value": "nel",
+      "folded": "nel"
+    },
+    {
+      "value": "﻿bom",
+      "folded": "bom"
+    },
+    {
+      "value": "  em space　",
+      "folded": "em space"
+    },
+    {
+      "value": "Ǆ",
+      "folded": "ǆ"
+    },
+    {
+      "value": "ﬀ",
+      "folded": "ﬀ"
+    },
+    {
+      "value": "Ⅻ",
+      "folded": "ⅻ"
+    },
+    {
+      "value": "①",
+      "folded": "①"
+    },
+    {
+      "value": "ｆｕｌｌ",
+      "folded": "ｆｕｌｌ"
+    }
+  ]
+}

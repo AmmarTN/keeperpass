@@ -1,0 +1,85 @@
+{
+  "source": "web/src/app/core/audit/audit.ts sha1Hex (bundled with esbuild, run in Node v20.19.0)",
+  "cases": [
+    {
+      "value": "",
+      "hex": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "value": " ",
+      "hex": "b858cb282617fb0956d960215c8e84d1ccf909c6"
+    },
+    {
+      "value": "a",
+      "hex": "86f7e437faa5a7fce15d1ddcb9eaeaea377667b8"
+    },
+    {
+      "value": "password",
+      "hex": "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"
+    },
+    {
+      "value": "P@ssw0rd!",
+      "hex": "076d3e6c4b9f654b5b220b9045b7458ab6b4cbc6"
+    },
+    {
+      "value": "pässwörd",
+      "hex": "f517ddf1d32a112ff1ad55c66d1b12cb38e7e8f7"
+    },
+    {
+      "value": "Ελληνικά",
+      "hex": "08a6101b132a0a1ea204ca121d6c82b04aa0ee4f"
+    },
+    {
+      "value": "日本語",
+      "hex": "c12140a0ffb4e56481b4fe0a7a25040c2eafa9ca"
+    },
+    {
+      "value": "🔐🗝️",
+      "hex": "9782b10577135f6e8eddca792b83062b8bcc8f73"
+    },
+    {
+      "value": "line\nbreak",
+      "hex": "2e1a2284714247d355c6c70d3f772e3f4d075aeb"
+    },
+    {
+      "value": "tab\tand  spaces ",
+      "hex": "9f41f8e170073468ad79718d80e6e0e82d3b31d5"
+    },
+    {
+      "value": " nbsp ",
+      "hex": "47c628ce82a81702e282dad0b9b61248e75ec4e9"
+    },
+    {
+      "value": "áè",
+      "hex": "7bfb1504218ac47092b7340bacefb3843cd4aa6d"
+    },
+    {
+      "value": "İstanbul",
+      "hex": "da19ec0a30889dfc79dd54d72118e86a3cc78df7"
+    },
+    {
+      "value": "Straße",
+      "hex": "880c6886fd25455f5534ec8b46e24a832dfb43b3"
+    },
+    {
+      "value": "ǅemal",
+      "hex": "a9d1f4300a53268b894b0dc35555d23b665f2d1c"
+    },
+    {
+      "value": "ﬁ ligature",
+      "hex": "8a95ab65b83c31e3ce407767d8d5d74381007081"
+    },
+    {
+      "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "hex": "c3efa690fa3fdd2e2526853eed670538ea127638"
+    },
+    {
+      "value": "\ud83d",
+      "hex": "9bdb77276c1852e1fb067820472812fcf6084024"
+    },
+    {
+      "value": "\udc00x",
+      "hex": "1b14366e732a705b712cbf9fca4e9e89dcf70b17"
+    }
+  ]
+}

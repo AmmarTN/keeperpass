@@ -1,0 +1,2420 @@
+{
+  "source": "web/src/app/core/vault/tag-color.ts, bundled with esbuild and run in Node",
+  "palette": [
+    "#3bb7f9",
+    "#8ec06c",
+    "#4caf7d",
+    "#f0a04b",
+    "#f26d8d",
+    "#3fc7c1",
+    "#e0b23c",
+    "#8d97a8"
+  ],
+  "cases": [
+    {
+      "name": "",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "a",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "b",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "ab",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "ba",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "A",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "work",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Work",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "WORK",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "personal",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Personal",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "finance",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "banking",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "social",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "email",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "shopping",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "travel",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "family",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "kids",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "school",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "university",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "health",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "medical",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "insurance",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "crypto",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "wallet",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "dev",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "github",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "servers",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "wifi",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "home",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "office",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "archive",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "old",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "important",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "shared",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "2fa",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "totp",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "recovery",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "streaming",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "games",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "news",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "cloud",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "tax",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "tag with spaces",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "  leading",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "trailing  ",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "café",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "café",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Ärzte",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "straße",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "İstanbul",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "niño",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "façade",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Ελληνικά",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Русский",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "日本語",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "中文",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "한국어",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "עברית",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "العربية",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "हिन्दी",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "🔐",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "🔑 keys",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "👨‍👩‍👧 family",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "🇫🇷",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "a🔥b",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "😀😀",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "The quick brown fox jumps over the lazy dog",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "0",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "1",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "12345",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "!@#$%^&*()",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "tab\tname",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "line\nbreak",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "\ud83d",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lone\udc00surrogate",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "\u0000",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "￿",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "􏿿",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "pajwtCb",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "xOTcJCfIt_øI78X",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "F_nExK.",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "x41ål4v",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "F8n2V_vAüaPY🔐Cf",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "J0Pcü0XgZebkpy5",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "d01UJ8nYNaP JG1",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "lSvY🔐yjMJyjEp0øAlGTwx01",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "BGf本ZSøQlyøElu9wxOLkçSf",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "Nß9oh85kZe.wNßz",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "F0nYtñHIxyLIpyD",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "J_DMüß日MpGjIüß.A🔐Sz6🔐mX",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "dqrkçibk🔐uncBSø",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "RGX本ROPopyzå-WHwFC16hSD",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "çajc🔐Or xuP6dKP JßLYpeH",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "çazM7iø本hS.gVeb",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "🔐q9ENmnEüyfERKT",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "üq5khCvå-CrgJSzchmTQçaH",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "🔐iTwNy日",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "3yHé3en",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "xaz NKPARKXcN45Ytq9本tñz",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "hOzIçSPMhOf本lßD",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Zm5kpuP",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "F_1Eç0.",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "tuPQlC5YJibQçñL6xivéNeø",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Jef N8n",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "ç_XkVy5wBy1w-u.",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Z_øåR4DANmDEly1",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Vqr çmbE-GT本R0PådñXAJ0X",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "NmLUN_ø本FqncZOT",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "7i1Q-4XQ🔐KfIüGøABKzsByz",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "3KvU-WPQd41chaøglOrshWD",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "B89kçWv2pCL63_bsdñLQüßH",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "dungNmv",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "BezkxKjAJKøQhi5",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Rqr6🔐yréhKTcRGf Ve.w3Wv",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "hajEZuø本tGHUhaø",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "B_bEZSXoB0. 🔐iP",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "ZßvEBmzg-GnARmzUV0bIFO5",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "VG5 çSbw🔐eHA78Håx8b2t_日",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "lqz本ç4P",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "luL2NC5",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "3ir本-yzåçKXUZ4L",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "-G.U🔐_TsBqP xy12J45w3Wv",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "NGP本Fef",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "xWPå3qz6pCø6ZqT",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "tuvsh8f本ZGvMF8L",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "Z85cd8b",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "p0PYç8XIperclGrålñjo🔐Wø",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Zy5wF0z",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "hiøopS.URñø tß日",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "B4jMtß9wpGjUx49",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "7OTsBWvkFGDIByøERC.YZ_T",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "BßTQpCP",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "huP2ZCn本çGHI-8P",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "RubANGH",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Re9g3yn RW92VS1",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "R8bkpS5",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "FirEFWT",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Rñ日本hßfMFß96daP ü4jEl_H",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "-0fwVSXwü0nQZGvctyroxy1",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Zqn6BmTA-C9gNß9本pS1sh01",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "ZG日éZmD",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "d8LUçGDcçWf2huf",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Z_1本Jy9kçaTUZñb",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Fu1本üirIh8b6lqLQN4L本lGz",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xOrYüWL6🔐4Téü_日",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "7Gz Fß5EFSPEZi.",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "-eøItOf",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "lC. ha1",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lñråFan",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7y9g3e日QRSXéNyLQ3OnoBiP",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "7e.UJa1",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "Z8日EF_LsZijkçqP",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "pK.wF0b",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "V0LkZßL",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "dß1ERK1",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "-ß9A-qD",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "pOfQF4ø",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "de5MNqné345sJuv",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "xK.MJ_X",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "RWTgNiHIh8DA-inåpyHUh0z",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "RW96Jab",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "Je9ådO9",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "çqréZ_D",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "hi日w3CX",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "ta.AZñj",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "NGr ü4zUFyzAdWLYZ8j6hñn",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "BßbU3Kz",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "-i.6N8fcp0T6Rßr hñncpOP",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "3ePQ7S日",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "-uvkFyn6Navc-mP",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "RC日67e9wüKL6pñ9I🔐C日本pO9",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "FWbA7ß.cdSroRñH",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "J_HwRßv2-OPéNOP",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "JñjElq日本NevcüK5",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "NuXg-ab本VK日sR_r",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "ha.cüK日",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "JGøédCféJinsJyvwZ_Lé3yj",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "FiT本ü0z",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "F0LYh8Dgl_5M🔐4D",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "pß日Y7ñL",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "VaLctñn",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Ja1cNWvQNiL6ü8vEJCP6tyv",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "pO日kVmr",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "hKPwçib2çKT FñjkJe.wNmT",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "3O9Qh4jUNñz2R_b",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Rñ96p81Y🔐C日I-if本pC5UJKH",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "tK9sd8r",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "🔐8rohiHI-W日w3eL",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "RGX6lñrAVSøM3e5",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "VifEüWr lC日YüñL",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "dy.本B_n",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "NubM🔐yP",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "-_fclWzYtGPg3m日ghCvåZqn",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "V4DgBa9otKL6tSøwN_bAh89",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "xyT6VKn",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7OTU705c7e日é7qf",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "pm1U-i5Iha5EBGzéüñ9本70H",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Fy9sF4rcpOPwç0DAFuX6F8.",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "üqfop45gF01AüenUlaøMRñv",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "JqjEZ_T本JanMRKToxS.wüaT",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "R0rQüq1s3K日w-WTsçWX2üiP",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "ROn6xqPUpßLAJOL",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "p_råçm日UNK5本FSzéhß5åR0j",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "N_Hkp85MxWnåt8T",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "3ñXIR_9cJK日ExOø",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "d8j2FñTIFSnE🔐a1olñfgç49",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "7Sj本7WHYdKøQR8D",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "x0volßb",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "FGLMNOnoRizåçuPER_øERaø",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "üW5Uç0T üCHUV8H",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "üßjs78.EFyD6V0D",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "lO1éçCvåR_vY-ujEJOfEZqr",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "ZqøcpG.wB4.6te日",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "pCboJuTQJCnUBW日6tW9ghq9",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "VyrwJWz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "l0rYFGfA🔐OXQç0T",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "pavåN8日",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "🔐yzctCPUZ_X RCz",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "FW9sle1MVCjg🔐Wf",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "BßfINKD",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "çOLMRKv本BmfEt0r",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "NGH63qvI3WHgBivglejåx_D",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "R_rs3yHIçmXétyTYNW9cF8b",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "-WXkRaD6J_Té🔐KD",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "-CzYZßvMNm9éNm1Y🔐iø2🔐ñb",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "üGTQN8zkJmDsZßT",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "BSvYüßréh8XABi.2VuTUxuT",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xubYBSr",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "NñzcBCj2hW5 V85glyøg30日",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "🔐ebY🔐ñj",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "F4.sJß日",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "FevIl4jYB8DåBCn 7CXM🔐Gr",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xuH2pGP",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "pñ5süGfIhmPERmHA-ñzQV45",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lOT6NmvQFGvwçq.",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "d41YhñHU7yrIdCøéR89Uxñr",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "lß. 🔐4våR01odK9",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "ly9oZ8n6x4XAN4L",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "🔐mXQ3iv",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "lufAxif本çajUZqbMçmf pu日",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lSjåFafsh41 R4P",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "dß.ApSzél_vodqb",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Reøéüuv -KHoüWb",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Fa日IR_jéüuvshqX",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "tWPcl4DEüuD6NGfkxñTåZuP",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Vmb6puXcZm1Qdy.ApmvAZ_5",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "d_Lwt0TM-O1Ulß.",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "p8日wxmHåZß1cBuøg-G日A7iP",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "78zåçGnMNKøUBy1",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "VqbsB4HsByDEJuX",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "üeb67Ov",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "hKn本hGréüñ.é-i.",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "pCvé7eb",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "B0DA🔐az",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "🔐uD本Zub2RqL本lmz",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "🔐y5wNñT",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "-KbMN_1",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "J8ré🔐ñ5",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "JiTYVKX",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "hñPwxm5Edßb hmDkNß9Içaj",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "VGLoBm9本NurUNevc🔐0HcF_b",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "p81UR092pezwt_.Y3S.MNS9",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "BGTgç4.wd_r67mncJKLc🔐8L",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "N_DM-a9QçiHå7e9",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "J8Ho7Gb",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "ZubAVñbARWnM🔐Sn",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "70nklOD",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "çiPM781IdGLMRKDY7_X hß9",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "puDcJ0n",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "hWXIR4jkJe.MJW5Ipm9本tiv",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "VeøsBaj",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "BOncçßø",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Z0nQüKzgçS日M3OT6Rñr2🔐ßf",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "üaP6teD",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "N0T2VGPålyn2BW5",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "RGXIRyféüßX2d4v",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "hOL -Gv",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "xeD6RWb",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "çK1UF_DwJñPU-K5",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "d0féü8r",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "BOjUpßX2RO5sJmn",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "diT2xi9M-4zUt8j",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "lCroF8n",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "3uDwdßPktqLQ🔐ev p09本üKø",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "lSvs7SPEZWvU-KL",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "dyLUxKbMFq1AtSnå🔐y56xi1",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "VGroxu9MZ85INi1å🔐GbwpßD",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "Nij2Jqv",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Vi日glmz",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "V8nåJ_v lOHQVKP",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "J8øwFqøé-STgR_PAhq9Ylßv",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "BmHohGD",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "x_X duf",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "ZGLI🔐C日YB4nw3KLIp85wt0n",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lqzQ-aX2tW9UdKfc🔐O9YVOP",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "NaøQh0øwlePItKDo7yDcJñL",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "p81cRmLs-Cjé🔐ij",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "du5kçKHåxa.åd0日",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "NWHUüWDYpa日QhGfkçiTohOD",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "🔐KjEçi日Mçñfkü8jQtSjkçß日",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "hmbI74fQZ8.w-uø",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "çCXoüC12-ßrw-yLI-qjkNñz",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "J_.güßj",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "xß12BOH",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "çSHoüaPMç8LéNav",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "RqHsçñ1",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "duøAB45AçiH2RefcNCvY3WH",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "JßHéxKDküa1 çeø",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "deHYlCr",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "34DUtSzMüSfs🔐m9",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "JO9Qü0z本laT2tO9",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "VSTgVyzéN8rgJñj",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "dy1Atmj",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "-qbw3yfQxñvEçKL",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "Vyné3a9本7ßTERGr",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "7qfwBKXMVq.本J_H",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Zqv2R_P",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "l_bwd4T",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "Nñzål_XEp8nMd8r2xñHkRir",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "tqX2pOHéZefwdßD本Z4PcçSn",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "h0zéhW9IçufURñPQRGfYpWr",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "JSHélyHoxuL J8b",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "tmbétS日",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "B8øålaz",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "xßXIha5ådiXAVyøMFO日MBßb",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "l4HkpßzQFß12N8P6çmrQdKL",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "-8v6RñTodñ.sJSLwüi.2-_X",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "JqbIF4rchiøéüñ.",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "ç0LgR0.QxujoçqL2VßfåV09",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "R_12🔐_日",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "ümb p8DM3mD RCT",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "F0roh0日o7aXküS5",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "xm9åF_日éZejkd0LsV4v6dWf",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "3yfsRar",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "ümb6Bß9g🔐0jItOjIdK1Yxq1",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "VßTspCL",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "lyLohWøIRafM-avsR4øctWf",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "t4bIçurERqTcp_L本7_rEZ85",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "7e.gJßb本Vy.QBG日",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "d0Lå7uX",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "x0Tå🔐ß.",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "ç8b6Ji.",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "VmPYBmL2R_TM-_H",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "üKr本Rß9 FSXA-a1cJaXs-iT",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "tq1IJWr",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lqbkdO56Ry.k-Sv6FKLcZßø",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Vuj6RenåpñøA7iH",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "RyPI7ß日本pu1éBßLålW16-yX",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "VCb本xubolG1E7un",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "JOX本NW9MlWrg34L",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "xßnUR8Lå🔐WvMdWjs3WbE78b",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "V0nsNGz 7ßj NKP",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "JßnM-Kz6RGfkBqHåZqrY🔐G1",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "üenQFaT",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "7SP2BW.cJWPcdKf",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "tßøgF4fåçñ日IBe5E-ß5MVeX",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "BWz2py5c-iPQ349",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "3iHgVß日åV4.本FyvQNaXg7ßL",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "3W日cNmøYBW1éV_T2tGvkü0j",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "-Wv23_DMçñjAlu5sla567ßH",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "-ñ1wFeH heLkRCPoR8zgB0T",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "RSnYçñv6FmbgüGHUFu1本Ruø",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "-ßT2tGzwxCbktqH xSroFmX",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "çßfQ-eH",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Nñ1UlGr2p_øUx4Péçmbéxm日",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "xefwp_5",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "V81IxmHQ3C9k-K5",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "li.IFñ5cdßøkNef",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "3qb 7yz",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "F0日A🔐ñDcxß5本V4T",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "RWPkp0.MçmHU-Oø",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "B_9Yt_.AJ0D本NO1",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "çOrUZyH",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "JñbcZO9IdñLUBS5",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "çWXk3uøéçyD huj",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "çe5ox_.YNmXkçSzElS.ot_j",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "FC5QdSX",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "NebMN8日QVuL Jm.oçWDUüñb",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "hñ日éZKHcV8véü8f",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "BñDs🔐WHåN4H6BCz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "pifåümL本BOPåçWøåpO5A3eb",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "hOnAVivcFW5 FSf",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Nq5UFßvI-CHAde日",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "-ePå🔐0bc3ijå3av",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "lW日A-_nAhyø RSL",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "3W5 RSn",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "Bazkx0DotuT2h8fQü0f6-aD",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "Ju日本te.",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Z_jIVWnåFS5MVyX",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "lS1本7SPwFCvAJßPéZ8P本üGb",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "lSzå3WD",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "🔐GLgB4.oVWzåh_zoZKDA3Cj",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Zuø Fefg3uPY-yX",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "tG1U3G9",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "da5INOj",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "dßT6xuHk🔐eb本3Wf2xñrIFO5",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "diz2JCøé-_v Fy1",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "Ji9ExG1Aü_DQx4TgFa.gN_P",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "üej6hW1本3yDs🔐yDéB_Lopu日",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "pif6pyb",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "üGfkN4øMZijgd8P",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7iXs-G日éZmbAdßX",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "dazYVCbw-ePoJCv",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xßLU3yø",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "-OXsRGHoZ8zgl85QpñXo-G1",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "Bez VGzåRef dyX",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "hCnoBWL",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "çWHElWz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "VC.kpß9",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "🔐8Pkx41 🔐GLg🔐K9sF_rEl_D",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "ü8vkçO日",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "Bu9AJ_1 JK.cüuzMüi9k🔐Kr",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "dq5éZW9 RyTQhuTg3yDMhßz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "çu日sRuø",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "FOPküKXg-m1kVKLktSj本V8.",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "Bq9c7ñøé-ß.Ul05",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "🔐yøkduTQVmrQNG.Uhe56çSj",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "FSbwN0våVOøEçaPwhW9MB0f",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "38PQZ8v ça1gxS5本B_joVñP",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "pmfQNñvk3ßLwdCP",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xñ16lubY3O1kt8L",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "3Gb6l0L",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "üW92t0L6-CzIçGvMxßjklC1",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "🔐CøåBy5",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "pS.gçaD",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "B4v本V_Dé🔐mHUVGøYRñ9w3qz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "FñLoüSX6-CzYhiXQ345gxiv",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "x8bchCj",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "3a日YVG日IVa92J45MBñTohßr",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "lqLUBWf",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "-ßTAçivQpePgpqv",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "dmPspungxOTYpy5IJSvMBCj",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "lWzU3Cb",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "lñzåZS9",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "h4Lc-S日ch49å🔐u1",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "xGøchaP",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "7qvAxq9gZOvQZej",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "-GjMN_D67q1E3uz",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "Zez本üu1w3ankBq1QNaøYpßX",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7ßøMF_f 3KvEBGH",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "pOLQJmD",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "pynålC日6piboxWr",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "di日IhirMx4z6çñø",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "ZSrMçñr",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "p_vc7q5UVWDMVß1",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "ç0øoBm9 74j2-yToVifg🔐CX",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7qvéVOL",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "hñjkFmfEt8øEFK9",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "🔐4v本du1kJe12pyfåJifYt_z",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "3O.MtGv",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "Ni5本F4ø",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "BGH2dKn2🔐a日2lKb",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "JKfgçe.",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "Nm.YVun",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "7WHMRW日",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "ü41kR0HgJC1I7u日",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "3Oøo3_TéBeP本dmnYJiDg7W.",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "7GLwNiPYFOLMlaf",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "piz2JmX本ly日UF0.wBKLQJ8v",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "çy9本çKDEdijgtyr",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "7_TMüß9",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "p_LQhGPAZeøoZO1",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "7a日élKnå3GPc🔐O1YVynUxCj",
+      "index": 0,
+      "color": "#3bb7f9"
+    },
+    {
+      "name": "ç_f2R8XoBñf 38n",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "dWn638n",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "🔐yrsxer xCDApGL",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "p_16l_TkVy9UV_L",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "🔐y9 lyzEdGTch81wp8PsxiD",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "üajA-C日 BurYV4L",
+      "index": 1,
+      "color": "#8ec06c"
+    },
+    {
+      "name": "ZevcFC9clñz2Nez",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "hqXgx01w3mjABeb",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "tßDM-aj",
+      "index": 4,
+      "color": "#f26d8d"
+    },
+    {
+      "name": "xO9åtßf2VSPsh8v",
+      "index": 5,
+      "color": "#3fc7c1"
+    },
+    {
+      "name": "pK.Exmf",
+      "index": 7,
+      "color": "#8d97a8"
+    },
+    {
+      "name": "tñrgZß.åFenQ🔐af",
+      "index": 2,
+      "color": "#4caf7d"
+    },
+    {
+      "name": "çSXw3KL",
+      "index": 3,
+      "color": "#f0a04b"
+    },
+    {
+      "name": "7K日U-0rAZC日本pWT",
+      "index": 6,
+      "color": "#e0b23c"
+    },
+    {
+      "name": "çGrk7ß9éNOzwZK5éhmHkü_f",
+      "index": 3,
+      "color": "#f0a04b"
+    }
+  ]
+}

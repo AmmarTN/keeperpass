@@ -1,0 +1,411 @@
+{
+  "source": "web/src/app/core/vault/vault-crypto.ts (bundled with esbuild, run in Node v20.19.0) + hash-wasm 4.12.0",
+  "plaintext": {
+    "vaults": [
+      {
+        "id": "vault-personal",
+        "name": "My Vault",
+        "created": "2025-01-04T10:20:30.456Z",
+        "futureVaultProp": {
+          "nested": [
+            1,
+            "two"
+          ]
+        }
+      },
+      {
+        "id": "v-work",
+        "name": "Work",
+        "organizationId": "org-1",
+        "error": "Sync failed"
+      },
+      {
+        "id": "v-old",
+        "name": "Old one"
+      }
+    ],
+    "items": [
+      {
+        "id": "i-github",
+        "vaultId": "vault-personal",
+        "name": "GitHub",
+        "fields": [
+          {
+            "name": "Username",
+            "type": "username",
+            "value": "janedoe-dev"
+          },
+          {
+            "name": "Password",
+            "type": "password",
+            "value": "Tq7#vR2m!xW9pL4@kZ8s",
+            "secret": true,
+            "futureFieldProp": "kept"
+          },
+          {
+            "name": "Website",
+            "type": "url",
+            "value": "github.com",
+            "iconGlyph": "f09b"
+          },
+          {
+            "name": "Authenticator Code",
+            "type": "totp",
+            "value": "JBSWY3DPEHPK3PXP"
+          },
+          {
+            "name": "Birthday",
+            "type": "date",
+            "value": "1992-04-12"
+          },
+          {
+            "name": "Expires On",
+            "type": "month",
+            "value": "2029-08"
+          },
+          {
+            "name": "Hologram",
+            "type": "future_field_type",
+            "value": "from a newer app"
+          }
+        ],
+        "tags": [
+          "work",
+          "dev"
+        ],
+        "created": "2026-08-23T18:54:00.000Z",
+        "updated": "2026-10-30T09:41:12.345Z",
+        "expiresAfter": 90,
+        "expiresAt": "2027-01-28T09:41:12.345Z",
+        "icon": "web",
+        "iconGlyph": "f09b",
+        "futureItemField": {
+          "pinned": true
+        },
+        "history": [
+          {
+            "updated": "2026-10-21T18:54:00.000Z",
+            "name": "GitHub v7",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-0"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 0
+          },
+          {
+            "updated": "2026-10-20T18:54:00.001Z",
+            "name": "GitHub v6",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-1"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 1
+          },
+          {
+            "updated": "2026-10-19T18:54:00.002Z",
+            "name": "GitHub v5",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-2"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 2
+          },
+          {
+            "updated": "2026-10-18T18:54:00.003Z",
+            "name": "GitHub v4",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-3"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 3
+          },
+          {
+            "updated": "2026-10-17T18:54:00.004Z",
+            "name": "GitHub v3",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-4"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 4
+          },
+          {
+            "updated": "2026-10-16T18:54:00.005Z",
+            "name": "GitHub v2",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-5"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 5
+          },
+          {
+            "updated": "2026-10-15T18:54:00.006Z",
+            "name": "GitHub v1",
+            "fields": [
+              {
+                "name": "Password",
+                "type": "password",
+                "value": "old-6"
+              }
+            ],
+            "tags": [
+              "work"
+            ],
+            "futureHistoryProp": 6
+          }
+        ]
+      },
+      {
+        "id": "i-legacy",
+        "vaultId": "v-work",
+        "name": "Légacy item — no created",
+        "fields": [
+          {
+            "name": "Note",
+            "type": "note",
+            "value": "Line 1\nLine 2 — ünïcödé 🔐"
+          }
+        ],
+        "tags": [],
+        "updated": "2024-02-29T23:59:59.999Z",
+        "history": []
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-1",
+        "name": "Acme",
+        "futureOrgProp": 42
+      }
+    ],
+    "favouriteIds": [
+      "i-github"
+    ],
+    "tagRegistry": [
+      "legacy-tag",
+      {
+        "name": "dev",
+        "created": "2026-01-02T03:04:05.006Z"
+      },
+      {
+        "name": "nodate"
+      },
+      {
+        "name": "with-extra",
+        "futureTagProp": "x"
+      }
+    ],
+    "exportHistory": [
+      {
+        "at": "2026-10-30T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 10,
+        "fileName": "keeperpass-0.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-29T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 11,
+        "fileName": "keeperpass-1.csv"
+      },
+      {
+        "at": "2026-10-28T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 12,
+        "fileName": "keeperpass-2.csv"
+      },
+      {
+        "at": "2026-10-27T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 13,
+        "fileName": "keeperpass-3.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-26T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 14,
+        "fileName": "keeperpass-4.csv"
+      },
+      {
+        "at": "2026-10-25T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 15,
+        "fileName": "keeperpass-5.csv"
+      },
+      {
+        "at": "2026-10-24T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 16,
+        "fileName": "keeperpass-6.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-23T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 17,
+        "fileName": "keeperpass-7.csv"
+      },
+      {
+        "at": "2026-10-22T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 18,
+        "fileName": "keeperpass-8.csv"
+      },
+      {
+        "at": "2026-10-21T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 19,
+        "fileName": "keeperpass-9.csv",
+        "futureExportProp": "x"
+      },
+      {
+        "at": "2026-10-20T08:00:00.123Z",
+        "format": "csv",
+        "scope": "My Vault",
+        "itemCount": 20,
+        "fileName": "keeperpass-10.csv"
+      },
+      {
+        "at": "2026-10-19T08:00:00.123Z",
+        "format": "csv",
+        "scope": "All Vaults",
+        "itemCount": 21,
+        "fileName": "keeperpass-11.csv"
+      }
+    ],
+    "futureTopLevel": {
+      "introducedIn": "9.9.9"
+    }
+  },
+  "vaults": [
+    {
+      "label": "ascii",
+      "secret": "correct horse battery staple",
+      "encrypted": {
+        "salt": "7cHiK7dzzEaBB64PAo9TKA==",
+        "iv": "rrjo8Xqc2Kwv11Ku",
+        "ciphertext": "AlzR3PCv+eUR9wuRNjNczxIKurIrhfQNkVoEx9Q3S38AMjkN3P8RsLdShdm2W4Aqs5CPaSldJHPSGlZXKaZ/cJQiO1ljxXy2dgiStZL8JHGfI5Ca2OopsGEQ7A8NZPT3KFR1p9OyCX9mUQxRn7qLzA+bY3ql6e44wdei0v8F4pBHyb6yMyYKl5noFCXvQjrVWCjO2DMabjX0pe6lF6+p85If5qWk6FUde4qNxxukBBtumM2vir3YzY5gRsZI4/1R+rgJa8ximeGtVfuDr+Ese31AuzGOixNrjiBJHMcHjr2ubLXz/zMP7j876y+23wYZsa10btEnZsxUQmAM2vC7q5t/VncTJNMUNjCzPa11RPcEEU7DdtQDVvJ0WhRd+WNBAInVA6teuXnaKD5hChBiVS8Bd7+wfUd+5ZPKgx03XPanBPmwNznXcCsp3HXk8k9TtrZK597ErL1bBi49kH9tfv2RnKD2YOOrOuBLjfkYON0CkfQfubMWSZTewNOZvIgkw03H0kz3q82uWWahJ3AyWPN8W4C5C2ejfBXjrgingwtIo+ICwnR6gze8+QQFiBrkp4Ytoxy4rr2J88BxG4H9RnlFDqyTBstiyiiTc8/P8KI35uhXyvCKtibCUBcT5a7hrayttxgiV8701rqT+iICCJlD21syx8mJWUDG74q1fpp9rNIQmoJYnrwKfdN01/5lvGScnrVO+YbRtkSNsN4C0k1WN1FqvTqpYZ1iYTSJV4rsFIqNmM/W5o0bDZoOiTkreDguIDrPPgEUVeaZkTAY4mDQ7Fe4pd64U3JJUs47oN5C3J1NKSNPSphLmwecXMwh52oyKdn0Kjs3umLyfX5V5ItFrdDZOCLVF31sNyBo/IVL/A20Xn9Ze07fRINqg97k2bzJYVNQkv0aQfsINRYpUSqR7YoB2TIAba+mmHOW8zThay0eOoYtePmQ1srPGHamIR8+yqUUt20sqes6J33MvyT1Yn0gZuPpJ7sNla/v4qGen0DYoG19Z1PSGcC9KeMg8e5WL4DCxb5sqYuICdyvAHU1IkEIVQ4J2QKDVf1jjz6mdkixTCmYw/7i0BiH6P+0Sj73sjoXs6vG7CvGZnWaPnU1eircZK1n07YRCOw6olAHCr8hEHja5kjQHdls3tpcIH4BMgvKmK6Od9LNSoBf0Bis8Vvtzirfn0SDIYCt/+OJ6cMezy4pLsYAYFpjX15w2D7GA0ApD0fETnSK0/wCXFup3r9xx7h1PclPe9uu6AWSAiFwqTL7ooUZnJfYsXDiCmUULSz7fbLUhFTxR20JT3mGCBvU4BOFr8RMUeAfHH0ckVnbASX+0iili1qdJdtZNItiMnH33113GTPPN3WFbnb2u7KgEhE2CQYAcsmgz8CWX9AuLbbsUbkHCN7h2jUaxOGRQzkEQ1F9C6KtYudIgKiW5P05Typt+HwcCnbD+qBYYPwEa6/wv985V7/JADKlLrZGQPY6aAzXfUEkvfo7Nf4B",
+        "kdf": {
+          "algorithm": "argon2id",
+          "memorySize": 65536,
+          "iterations": 3,
+          "parallelism": 4
+        },
+        "encoding": "gzip"
+      }
+    },
+    {
+      "label": "unicode",
+      "secret": "pässwörd-🔐-密码 ñ",
+      "encrypted": {
+        "salt": "FZ1eErAQ4nGW4Z3vWSCp0A==",
+        "iv": "uXbb89f0eangRwO3",
+        "ciphertext": "lWQSwpzhLYbvhQuNchQGlnXlT0yjP0smE6ZeRBvz5EGsN9Opl/AX5LbuF7NSWcus1+6nZht0TzY+ifsB60hCv+ZQ7CiUJwh/9ZzpCgF3NOa8+YKnuwe7Jl6gxVAOsIY415UCe5dJZWqvjjdEbW0rQ9ZzVn6lheNJQBVowrYZT/h7N7wFduyJ3LyP90iHJVkdQR6irbkFXX9OYFSstkmOM66rZB4D/41lC3I/rBof1jEzC59uaYwbzFdlVX1OEv5IESS+mKbn6ThxSVVIMj3tAajV5s2dqlaM7ZUI/QlUQqpHtwPYSqLnFsnyEHd8PvmONREzLhn4srX/VMA1k7/UZ/9rZvrOX3ni6937QL6awxm2ays2X9BfX0+jnwTRbgueiu6Lx3NAtAFEkF6MVR+4zBaK5rKhmT8Q1an0rlex1JxMRY8PhYpvfE8m3IVw5AiJ38lE9UvtEviuqV74ffH4IyPNpHbA9olhLGN5amFWLdRXp+i1YoCbbcZfMUvJmOUtlem6mU72QJdec0xPN9V0CjDEGfl5VcomZ9nWe02FxZI83don5k6pgYHdcCq2UQP0wRnPoGH+G+/DKWgba+BBexjnxZMoCRKLyizScENCF1RS07c7zFuT4eXsl4n4QFuND8LVni+ASxqpvlTumOZThKiMSkqssksZ8wPilN2C6xcDJTGi9ODo4X/aFG0Ea65eicFGdRS1Dg9rbd9DooplxD3MdKZ8VHAglKX9KVY9+syDlu5PUscgPAHQhmFdLrNSqn25HyUm/7XexJenveAvlD5OlGL9DKz43eQaaxMEi5ghPCUJv6u7aKazAmoLefC7rU1V0H3hc2mWvWr51761++Dcrv6noyYxlnzCjWZDhY45f8QCt0GmjfV3phwm9PkOWYIyJVLWN6wXjmhwDCslY9De4G++a5S2I5Aw1NA5fBDJF289xWHrsm7cZaAq/kv5nnhTCNYkg6lOH2x/m+Y5Y+VBncoaNIvKJ3cuBq2NHm6eieXbfIyHPd+wGZamYT2BGmJKGVIJU+CqL6lTfnV95neZGnwJy4tc3oN0eo0Rcx53XaJ3rI5uRea0QuySPEZxBXByudi/paXQwTOzxAwUqmr3tNbtqqJqE9gqOe/J5+eWcl8b9Igvemp6MT8iJHPrUEk9a4EIc+PFim92sWV3VkvvgPhVpnV2VUMBLVNMunfscix2FEImNJ1qgiULtXxYKo2MzRyvRTT4FRLIRfVXp/+c+bh1IXM2WSp+cmXcpBEcW3nDalcCb6pOM5mZa4djBOt0SMrPu6Z1262TACPCFkL9OAjOaa8AkaYjyL79fUn8gaB1vPNdlgQ4nE/qX0aWHo7Q/v78QImN1WnickEbAdbOaM3CUPZQiwolsK6Mgw99H4FPErfiQ9ubJ8d79LvUP6dR4ZcdHYWGjdkklFZejXTWiTXW036rjdzgzdFFjTAIeDyk8t8I4cTig6Vv+ZwaIpZMWTK6ANfxt7f8Y+ZfhM2H",
+        "kdf": {
+          "algorithm": "argon2id",
+          "memorySize": 65536,
+          "iterations": 3,
+          "parallelism": 4
+        },
+        "encoding": "gzip"
+      }
+    },
+    {
+      "label": "legacy-plain",
+      "secret": "correct horse battery staple",
+      "encrypted": {
+        "salt": "tMcL5+ieTDNKwRy+6jx2Xg==",
+        "iv": "xIeITtcTNKo1zOPj",
+        "ciphertext": "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",
+        "kdf": {
+          "algorithm": "argon2id",
+          "memorySize": 65536,
+          "iterations": 3,
+          "parallelism": 4
+        }
+      }
+    }
+  ],
+  "wrongSecret": "Correct horse battery staple",
+  "keys": [
+    {
+      "password": "correct horse battery staple",
+      "salt": "000102030405060708090a0b0c0d0e0f",
+      "memorySize": 65536,
+      "iterations": 3,
+      "parallelism": 4,
+      "key": "853b272a44db1421c02962669a55eb0994f3cab385ed1c4c79253eee19bab49e"
+    },
+    {
+      "password": "pässwörd-🔐-密码 ñ",
+      "salt": "ffeeddccbbaa99887766554433221100",
+      "memorySize": 8192,
+      "iterations": 2,
+      "parallelism": 4,
+      "key": "57c51c8639a39ae4c6121036ed7b182407464d993fcab9d95ca5845141688b64"
+    },
+    {
+      "password": " ",
+      "salt": "0123456789abcdef0123456789abcdef",
+      "memorySize": 1024,
+      "iterations": 1,
+      "parallelism": 1,
+      "key": "9ff20a947d58509526c4ac6bcf0de90ef70b4c5bd3111e000d0bc90097c9c447"
+    },
+    {
+      "password": "p",
+      "salt": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5",
+      "memorySize": 4096,
+      "iterations": 3,
+      "parallelism": 2,
+      "key": "124834c8f31b59d8fbeb314c6a1f5a8e635c2c9e9cb7d2da467e888497cc95c9"
+    }
+  ]
+}
